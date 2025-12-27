@@ -1,7 +1,10 @@
+import Section1 from "./UI/Section1";
 
 
 export default function Home() {
   return (
-  <div></div>
+  <div>
+    <Section1/>
+  </div>
   );
 }
