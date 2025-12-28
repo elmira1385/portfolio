@@ -27,3 +27,21 @@ body {
     color: var(--color-gray);
   }
 }
+
+
+.back{
+  animation: card1 5s ease infinite alternate;
+  filter: blur(4px);
+}
+
+@keyframes card1{
+    0%{
+transform: rotate(0deg);
+    }
+    50%{
+transform: rotate(7deg);
+    }
+    100%{
+transform: rotate(0deg);
+    }
+}

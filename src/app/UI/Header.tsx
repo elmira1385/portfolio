@@ -8,7 +8,7 @@ const Header = () => {
   const { theme, setTheme } = useTheme();
   const [isOpenHeader, setIsOpenHeader] = useState(false);
   return (
-    <div className="bg-transparent dark:bg-transparent flex justify-between px-6 sm:gap-120 sm:justify-center py-6 items-center">
+    <div className="bg-transparent dark:bg-transparent flex justify-between px-6 sm:gap-120 sm:justify-center py-5 items-center">
       <div>
         <p className="text-xl text-primary font-bold">ESH.</p>
       </div>
