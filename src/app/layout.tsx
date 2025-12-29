@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "./UI/Header";
 import ThemProvider from "./theme-provider";
 import ThemeProvider from "./theme-provider";
+import Footer from "./UI/Footer";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -28,6 +29,7 @@ export default function RootLayout({
         <ThemeProvider>
           <Header />
           {children}
+          <Footer/>
         </ThemeProvider>
       </body>
     </html>

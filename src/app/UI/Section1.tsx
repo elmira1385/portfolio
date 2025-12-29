@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Section1 = () => {
   return (
-    <div className="sm:flex sm:justify-center gap-4 sm:gap-100   sm:text-start sm:items-center  py-18 text-center ">
+    <div className="flex-col sm:flex sm:flex-row sm:pl-50 sm:py-34  gap-4 sm:gap-100  sm:text-start sm:items-center  py-18 text-center ">
       <div className="flex flex-col gap-7">
         <motion.p
           initial={{
@@ -145,9 +145,20 @@ const Section1 = () => {
           </div>
         </motion.div>
       </div>
-      <div className="relative pt-86 flex">
-        <div className="back bg-[#c2d6fc] dark:bg-[#081938]  rounded-3xl w-90 h-77.5 absolute top-[50%] left-[50%] z-20 -translate-1/2"></div>
-        <div className="bg-white hover:shadow-2xl/60 flex flex-col gap-6 hover:scale-102 p-6 dark:border-2 border-gray-800 shadow-[#c2d6fc] dark:shadow-[#12316a]  dark:bg-[#0D111F] w-90 h-77.5 absolute top-[50%] left-[50%] rounded-2xl z-30 -translate-1/2">
+      <motion.div initial={{
+            opacity: 0,
+            y: 30,
+          }}
+          animate={{
+            opacity: 1,
+            y: 0,
+          }}
+          transition={{
+            duration: 0.4,
+            delay: 0.4,
+          }} className="relative pt-86 flex">
+        <div className="back bg-[#c2d6fc] sm:w-110 dark:bg-[#081938]  rounded-3xl w-90 h-77.5 absolute top-[50%] left-[50%] z-20 -translate-1/2"></div>
+        <div className="bg-white hover:shadow-2xl/60 sm:w-110 flex flex-col gap-6 hover:scale-102 p-6 dark:border-2 border-gray-800 shadow-[#c2d6fc] dark:shadow-[#12316a]  dark:bg-[#0D111F] w-90 h-77 absolute top-[50%] left-[50%] rounded-2xl z-30 -translate-1/2">
           <div className="flex justify-between items-center ">
             <div className="flex space-x-2">
               <div className="w-3 h-3 rounded-full bg-red-500"></div>
@@ -161,12 +172,12 @@ const Section1 = () => {
             <p className="text-[#DD337F] text-sm">const <span className="text-[#2563EB]"> developer </span> <span className="text-black dark:text-gray-500">=</span> <span className="text-[#FA9753]">{"{"}</span></p>
             <p className="text-[#AC63EF] text-sm pl-6">name: <span className="text-[#16A34A]">{" 'Elmira ShokriyanFard'"}</span></p>
             <p className="text-[#AC63EF] text-sm sm:pl-6">skills: <span className="text-[#FA9753]">[</span><span className="text-[#16A34A]">'Git'</span> , <span className="text-[#16A34A]">'Html'</span>  ,  <span className="text-[#16A34A]">'Css'</span> ,  <span className="text-[#16A34A]">'JavaScript'</span> , <span className="text-[#16A34A]">'React'</span>  ,  <span className="text-[#16A34A]">'Next.Js'</span> <span className="text-[#FA9753]">]</span> , </p>
-            <p className="text-[#AC63EF] text-sm pl-5 sm:pl-6">focuses: <span className="text-[#FA9753]">[</span><span className="text-[#16A34A]">'Git'</span> , <span className="text-[#16A34A]">'Html'</span>  ,  <span className="text-[#16A34A]">'Css'</span> ,  <span className="text-[#16A34A]">'JavaScript'</span> , <span className="text-[#16A34A]">'React'</span>  ,  <span className="text-[#16A34A]">'Next.Js'</span> <span className="text-[#FA9753]">]</span> , </p>
+            <p className="text-[#AC63EF] text-sm pl-5 sm:pl-6">focuses: <span className="text-[#FA9753]">[</span><span className="text-[#16A34A]">'Frontend'</span> <span className="text-[#FA9753]">]</span> , </p>
             <p className="text-[#AC63EF] text-sm pl-6">learning: <span className="text-[#16A34A]">{" 'Always'"}</span></p>
             <p className="text-[#FA9753]">{"}"}</p>
           </div> 
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
