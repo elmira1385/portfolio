@@ -8,15 +8,15 @@ const Header = () => {
   const { theme, setTheme } = useTheme();
   const [isOpenHeader, setIsOpenHeader] = useState(false);
   return (
-    <div className="bg-[#F7FAFC]/90 z-50 dark:bg-[#020817]/90 sticky top-0 left-0 flex justify-between px-6 sm:gap-120 sm:justify-center py-5 items-center">
+    <div  className="bg-[#F7FAFC]/90 z-50 dark:bg-[#020817]/90 sticky top-0 left-0 flex justify-between px-6 sm:gap-120 sm:justify-center py-5 items-center">
       <div>
         <p className="text-xl text-primary font-bold">ESH.</p>
       </div>
       <div className="flex sm:gap-10 gap-2 items-center">
-        <div className="flex sm:gap-8 hidden sm:inline-flex">
+        <div className="flex sm:gap-8 hidden sm:inline-flex ">
           <a
             href="#home"
-            className="text-sm dark:text-white dark:hover:text-[#2662d9] font-medium text-gray text-primary-hover transition-colors cursor-pointer"
+            className="text-sm  dark:text-white dark:hover:text-[#2662d9] font-medium text-gray text-primary-hover transition-colors cursor-pointer"
           >
             Home
           </a>

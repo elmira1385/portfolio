@@ -2,13 +2,16 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 body {
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   font-family: var(--font-inter);
-  scroll-behavior: smooth;
+ 
 }
-:root,
+html,
 :host {
   height: 100%;
+  scroll-behavior: smooth;
   --color-primary: #2662d9;
   --bg-primary: #2662d9;
   --color-gray: #344256;
