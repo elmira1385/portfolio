@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} antialiased dark:bg-[#020817] bg-[#F7FAFC] `}
+        className={`${inter.variable} antialiased  `}
       >
         <ThemeProvider>
           <Header />

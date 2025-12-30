@@ -6,7 +6,10 @@ body {
   display: flex;
   flex-direction: column;
   font-family: var(--font-inter);
- 
+ background-color: #F7FAFC
+}
+.dark body {
+ background-color: #020817
 }
 html,
 :host {
