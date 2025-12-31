@@ -1,9 +1,13 @@
-import React from "react";
+"use client";
 import myPicture from "@/image/myPicture.jpg";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 const About = () => {
   return (
-    <div id="about" className="flex scroll-mt-20 flex-col py-10 sm:flex-row sm:px-40 sm:pb-40 sm:pt-8 gap-10">
+    <div
+      id="about"
+      className="flex scroll-mt-20 flex-col py-10 sm:flex-row sm:px-40 sm:pb-40 sm:pt-10 gap-10"
+    >
       <div className="grid grid-cols-1 p-6 gap-8 ">
         <div className="flex flex-col gap-10">
           <div>
@@ -45,7 +49,7 @@ const About = () => {
           </div>
         </div>
         <div className="flex flex-col sm:flex-row gap-6">
-          <div className="p-6 pt-6 bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg flex flex-col gap-4 shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
+          <div className=" p-6 pt-6 bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg flex flex-col gap-4 shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
             <div>
               <h3 className="text-lg font-semibold flex items-center gap-2 text-gray dark:text-white">
                 <svg
@@ -82,7 +86,7 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className="p-6 pt-6 bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg flex flex-col gap-4 shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
+          <div className=" p-6 pt-6 bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg flex flex-col gap-4 shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
             <div>
               <h3 className="text-lg font-semibold flex items-center gap-2 text-gray dark:text-white">
                 <svg
@@ -154,42 +158,44 @@ const About = () => {
         </div>
         <div>
           <button className="bg-primary hover:scale-103 shadow-lg/45 shadow-blue-700 hover:shadow-lg/65 flex gap-2 justify-center items-center py-2 px-3 rounded-lg">
-            <svg className="stroke-white dark:stroke-black fill-none"
+            <svg
+              className="stroke-white dark:stroke-black fill-none"
               width="24px"
               height="24px"
               viewBox="0 0 24 24"
               id="download-double-arrow"
               data-name="Line Color"
               xmlns="http://www.w3.org/2000/svg"
-            
             >
-              <polyline className="stroke-white dark:stroke-black fill-none"
+              <polyline
+                className="stroke-white dark:stroke-black fill-none"
                 id="secondary"
                 points="15 14 12 17 9 14"
-                
               ></polyline>
-              <polyline className="stroke-white  dark:stroke-black fill-none"
+              <polyline
+                className="stroke-white  dark:stroke-black fill-none"
                 id="secondary-2"
                 data-name="secondary"
                 points="15 9 12 12 9 9"
-               
               ></polyline>
-              <line className="stroke-white  dark:stroke-black fill-none"
+              <line
+                className="stroke-white  dark:stroke-black fill-none"
                 id="secondary-3"
                 data-name="secondary"
                 x1="12"
                 y1="12"
                 x2="12"
                 y2="3"
-                
               ></line>
-              <path className="stroke-white  dark:stroke-black fill-none"
+              <path
+                className="stroke-white  dark:stroke-black fill-none"
                 id="primary"
                 d="M19,10h1a1,1,0,0,1,1,1v9a1,1,0,0,1-1,1H4a1,1,0,0,1-1-1V11a1,1,0,0,1,1-1H5"
-                
               ></path>
             </svg>
-            <p className="text-white font-medium text-sm dark:text-black">Download Resume</p>
+            <p className="text-white font-medium text-sm dark:text-black">
+              Download Resume
+            </p>
           </button>
         </div>
       </div>

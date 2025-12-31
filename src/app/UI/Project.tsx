@@ -7,7 +7,10 @@ const Project = () => {
   const [ShowIconGithub, setShowIconGithub] = useState<number | null>(null);
   const [isShowMore, setIsShowMore] = useState(false);
   return (
-    <div id="projects" className="flex flex-col scroll-mt-30 gap-10 sm:px-46 sm:pb-40 px-6 pb-6 pt-4">
+    <div
+      id="projects"
+      className="flex flex-col scroll-mt-30 gap-10 sm:px-46 px-6 pb-6 pt-4"
+    >
       <div className="flex flex-col gap-6 ">
         <p className="text-3xl sm:text-4xl font-bold text-gray dark:text-white">
           <span className="border-b-4 border-[#2662d9]">Pro</span>jects
@@ -302,11 +305,15 @@ const Project = () => {
         )}
       </div>
       {isShowMore ? (
-        <button onClick={() => {
+        <button
+          onClick={() => {
             setIsShowMore(false);
-          }} className="flex items-center justify-center gap-2  rounded-md text-sm font-medium  transition-all duration-300 border border-gray-200 hover:bg-[#2662d9] hover:text-white  dark:text-white dark:border-gray-900 dark:hover:text-black self-center  px-4 py-2 group">
+          }}
+          className="flex items-center justify-center gap-2  rounded-md text-sm font-medium  transition-all duration-300 border border-gray-200 hover:bg-[#2662d9] hover:text-white  dark:text-white dark:border-gray-900 dark:hover:text-black self-center  px-4 py-2 group"
+        >
           <span>Show Less</span>
-          <svg className="group-hover:-translate-y-1"
+          <svg
+            className="group-hover:-translate-y-1"
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
@@ -316,7 +323,6 @@ const Project = () => {
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
-            
           >
             <path d="m18 15-6-6-6 6"></path>
           </svg>
