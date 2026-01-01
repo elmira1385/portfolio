@@ -2,7 +2,7 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <div id="skills" className="flex flex-col gap-12 sm:px-46 px-6 pb-50 pt-40">
+    <div id="skills" className="flex flex-col  gap-12 sm:px-46 px-6 pb-50 pt-40">
       <div className="flex flex-col gap-6 ">
         <p className="text-3xl sm:text-4xl font-bold text-gray dark:text-white">
           <span className="border-b-4 border-[#2662d9]">Sk</span>ills

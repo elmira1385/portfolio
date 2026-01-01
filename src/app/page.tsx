@@ -1,4 +1,5 @@
 import About from "./UI/About";
+import Achivement from "./UI/Achivement";
 import Project from "./UI/Project";
 
 import Section1 from "./UI/Section1";
@@ -11,6 +12,7 @@ export default function Home() {
       <About />
       <Project/>
       <Skills/>
+      <Achivement/>
     </div>
   );
 }

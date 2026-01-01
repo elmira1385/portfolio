@@ -6,10 +6,10 @@ body {
   display: flex;
   flex-direction: column;
   font-family: var(--font-inter);
- background-color: #F7FAFC
+  background-color: #f7fafc;
 }
 .dark body {
- background-color: #020817
+  background-color: #020817;
 }
 html,
 :host {
@@ -30,26 +30,27 @@ html,
   .text-primary-hover:hover {
     color: var(--color-primary);
   }
+  .bg-primary-hover:hover {
+    background-color: var(--bg-primary);
+  }
   .text-gray {
     color: var(--color-gray);
   }
 }
 
-
-.back{
+.back {
   animation: card1 5s ease infinite alternate;
   filter: blur(4px);
 }
 
-@keyframes card1{
-    0%{
-transform: rotate(0deg);
-    }
-    50%{
-transform: rotate(5deg);
-    }
-    100%{
-transform: rotate(0deg);
-    }
+@keyframes card1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
-
