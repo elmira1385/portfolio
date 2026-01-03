@@ -1,8 +1,11 @@
 "use client";
 import myPicture from "@/image/myPicture.jpg";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import CursorAnimation from "./CursorAnimation";
 const About = () => {
+  const box1=useRef(null)
+  const box2=useRef(null)
   return (
     <div
       id="about"
@@ -48,8 +51,8 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col sm:flex-row gap-6">
-          <div className=" p-6 pt-6 bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg flex flex-col gap-4 shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
+        <div  className="flex flex-col sm:flex-row gap-6 ">
+          <div ref={box1} className="relative overflow-hidden p-6 pt-6 bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg flex flex-col gap-4 shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
             <div>
               <h3 className="text-lg font-semibold flex items-center gap-2 text-gray dark:text-white">
                 <svg
@@ -85,8 +88,9 @@ const About = () => {
                 Dean's List (2023)
               </p>
             </div>
+            <CursorAnimation boxRef={box1}/>
           </div>
-          <div className=" p-6 pt-6 bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg flex flex-col gap-4 shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
+          <div ref={box2} className=" relative overflow-hidden p-6 pt-6 bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg flex flex-col gap-4 shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
             <div>
               <h3 className="text-lg font-semibold flex items-center gap-2 text-gray dark:text-white">
                 <svg
@@ -121,7 +125,9 @@ const About = () => {
                 Dean's List (2023)
               </p>
             </div>
+            <CursorAnimation boxRef={box2}/>
           </div>
+          
         </div>
       </div>
       <div className="flex flex-col justify-center items-center px-4 pb-30 sm:py-18 gap-6">

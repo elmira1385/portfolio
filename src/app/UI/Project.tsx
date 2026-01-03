@@ -1,11 +1,16 @@
 "use client";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import example from "@/image/example.png";
 import { button, div } from "framer-motion/client";
+import CursorAnimation from "./CursorAnimation";
 const Project = () => {
   const [ShowIconGithub, setShowIconGithub] = useState<number | null>(null);
   const [isShowMore, setIsShowMore] = useState(false);
+  const box3=useRef(null)
+  const box4=useRef(null)
+  const box5=useRef(null)
+  const box6=useRef(null)
   return (
     <div
       id="projects"
@@ -53,7 +58,7 @@ const Project = () => {
               </div>
             )}
           </div>
-          <div className="flex flex-col  p-6 gap-4 self-start dark:bg-[#020817]  bg-white rounded-b-xl">
+          <div ref={box3} className="flex relative overflow-hidden flex-col  p-6 gap-4 self-start dark:bg-[#020817]  bg-white rounded-b-xl">
             <h3 className="text-xl font-bold text-gray dark:text-white ">
               MSR Tailor Store
             </h3>
@@ -89,6 +94,7 @@ const Project = () => {
               </svg>
               <p className="text-sm font-medium ">Github</p>
             </button>
+            <CursorAnimation boxRef={box3}/>
           </div>
         </div>
         <div className="flex flex-col justify-center items-center sm:w-92  hover:scale-102 hover:shadow-2xl shadow-gray-300 transition-all rounded-xl  dark:hover:shadow-none dark:border-2 dark:border-gray-900">
@@ -123,7 +129,7 @@ const Project = () => {
               </div>
             )}
           </div>
-          <div className="flex flex-col  p-6 gap-4 self-start dark:bg-[#020817]  bg-white rounded-b-xl">
+          <div ref={box4} className="flex relative overflow-hidden flex-col  p-6 gap-4 self-start dark:bg-[#020817]  bg-white rounded-b-xl">
             <h3 className="text-xl font-bold text-gray dark:text-white ">
               MSR Tailor Store
             </h3>
@@ -159,6 +165,7 @@ const Project = () => {
               </svg>
               <p className="text-sm font-medium ">Github</p>
             </button>
+            <CursorAnimation boxRef={box4}/>
           </div>
         </div>
         <div className="flex flex-col justify-center items-center sm:w-92  hover:scale-102 hover:shadow-2xl shadow-gray-300 transition-all rounded-xl  dark:hover:shadow-none dark:border-2 dark:border-gray-900">
@@ -193,7 +200,7 @@ const Project = () => {
               </div>
             )}
           </div>
-          <div className="flex flex-col  p-6 gap-4 self-start dark:bg-[#020817]  bg-white rounded-b-xl">
+          <div ref={box5} className="flex relative overflow-hidden flex-col  p-6 gap-4 self-start dark:bg-[#020817]  bg-white rounded-b-xl">
             <h3 className="text-xl font-bold text-gray dark:text-white ">
               MSR Tailor Store
             </h3>
@@ -229,6 +236,7 @@ const Project = () => {
               </svg>
               <p className="text-sm font-medium ">Github</p>
             </button>
+            <CursorAnimation boxRef={box5}/>
           </div>
         </div>
         {isShowMore && (
@@ -264,7 +272,7 @@ const Project = () => {
                 </div>
               )}
             </div>
-            <div className="flex flex-col  p-6 gap-4 self-start dark:bg-[#020817]  bg-white rounded-b-xl">
+            <div ref={box6} className="flex flex-col relative overflow-hidden  p-6 gap-4 self-start dark:bg-[#020817]  bg-white rounded-b-xl">
               <h3 className="text-xl font-bold text-gray dark:text-white ">
                 MSR Tailor Store
               </h3>
@@ -300,6 +308,7 @@ const Project = () => {
                 </svg>
                 <p className="text-sm font-medium ">Github</p>
               </button>
+              <CursorAnimation boxRef={box6}/>
             </div>
           </div>
         )}

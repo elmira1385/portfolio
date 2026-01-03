@@ -1,5 +1,7 @@
 import About from "./UI/About";
 import Achivement from "./UI/Achivement";
+import Contact from "./UI/Contact";
+import MoveUp from "./UI/MoveUp";
 import Project from "./UI/Project";
 
 import Section1 from "./UI/Section1";
@@ -13,6 +15,8 @@ export default function Home() {
       <Project/>
       <Skills/>
       <Achivement/>
+      <Contact/>
+      <MoveUp/>
     </div>
   );
 }

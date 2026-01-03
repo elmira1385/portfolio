@@ -1,6 +1,19 @@
-import React from "react";
+"use client";
+
+import { useRef } from "react";
+import CursorAnimation from "./CursorAnimation";
 
 const Skills = () => {
+  const box7 = useRef(null);
+  const box8 = useRef(null);
+  const box9 = useRef(null);
+  const box10 = useRef(null);
+  const box11 = useRef(null);
+  const box12 = useRef(null);
+  const box13 = useRef(null);
+  const box14 = useRef(null);
+  const box15 = useRef(null);
+ 
   return (
     <div
       id="skills"
@@ -11,11 +24,12 @@ const Skills = () => {
           <span className="border-b-4 border-[#2662d9]">Sk</span>ills
         </p>
         <p className="dark:text-gray-400 text-gray-500 text-[15px] sm:text-base sm:w-190">
-          Focused on building modern, scalable, and user‑friendly web applications.
+          Focused on building modern, scalable, and user‑friendly web
+          applications.
         </p>
       </div>
-      <div className="flex flex-col sm:flex-row sm:flex-wrap gap-8 sm:gap-6">
-        <div className="flex flex-col  gap-6 p-6 bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg  shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
+      <div className="flex flex-col sm:flex-row sm:flex-wrap gap-8 sm:gap-6 ">
+        <div ref={box7} className="relative overflow-hidden flex flex-col  gap-6 p-6 bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg  shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
           <div className="flex gap-3 items-center">
             <div className="p-2  text-primary rounded-lg bg-[#eaf1fc] dark:bg-[#152B4F]  ">
               <svg
@@ -48,8 +62,9 @@ const Skills = () => {
               HTML/CSS
             </p>
           </div>
+         <CursorAnimation boxRef={box7}/>
         </div>
-        <div className="flex flex-col gap-6 p-6 bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg  shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
+        <div ref={box8} className="relative overflow-hidden  flex flex-col gap-6 p-6 bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg  shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
           <div className="flex gap-3 items-center">
             <div className="p-2  text-primary rounded-lg bg-[#eaf1fc] dark:bg-[#152B4F]  ">
               <svg
@@ -95,8 +110,9 @@ const Skills = () => {
               React Hook Form
             </p>
           </div>
+          <CursorAnimation boxRef={box8}/>
         </div>
-        <div className="flex flex-col gap-6 p-6 bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg  shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
+        <div ref={box9} className="relative overflow-hidden flex flex-col gap-6 p-6 bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg  shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
           <div className="flex gap-3 items-center">
             <div className="p-2  text-primary rounded-lg bg-[#eaf1fc] dark:bg-[#152B4F]  ">
               <svg
@@ -144,8 +160,9 @@ const Skills = () => {
               Accessibility Basics
             </p>
           </div>
+          <CursorAnimation boxRef={box9}/>
         </div>
-        <div className="flex flex-col gap-6 p-6 bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg  shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
+        <div ref={box10} className="relative overflow-hidden flex flex-col gap-6 p-6 bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg  shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
           <div className="flex gap-3 items-center">
             <div className="p-2  text-primary rounded-lg bg-[#eaf1fc] dark:bg-[#152B4F]  ">
               <svg
@@ -174,8 +191,9 @@ const Skills = () => {
               ApexCharts
             </p>
           </div>
+          <CursorAnimation boxRef={box10}/>
         </div>
-        <div className="flex flex-col gap-6 p-6 bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg  shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
+        <div ref={box11} className="relative overflow-hidden flex flex-col gap-6 p-6 bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg  shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
           <div className="flex gap-3 items-center">
             <div className="p-2  text-primary rounded-lg bg-[#eaf1fc] dark:bg-[#152B4F]  ">
               <svg
@@ -206,8 +224,9 @@ const Skills = () => {
               State Management(Zustand,React Query)
             </p>
           </div>
+          <CursorAnimation boxRef={box11}/>
         </div>
-        <div className="flex flex-col gap-6 p-6 bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg  shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
+        <div ref={box12} className="relative overflow-hidden flex flex-col gap-6 p-6 bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg  shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
           <div className="flex gap-3 items-center">
             <div className="p-2  text-primary rounded-lg bg-[#eaf1fc] dark:bg-[#152B4F]  ">
               <svg
@@ -257,8 +276,9 @@ const Skills = () => {
               Figma
             </p>
           </div>
+          <CursorAnimation boxRef={box12}/>
         </div>
-        <div className="flex flex-col gap-6 p-6 bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg  shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
+        <div ref={box13} className="relative overflow-hidden flex flex-col gap-6 p-6 bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg  shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
           <div className="flex gap-3 items-center">
             <div className="p-2  text-primary rounded-lg bg-[#eaf1fc] dark:bg-[#152B4F]  ">
               <svg
@@ -292,8 +312,9 @@ const Skills = () => {
               clsx
             </p>
           </div>
+          <CursorAnimation boxRef={box13}/>
         </div>
-        <div className="flex flex-col gap-6 p-6 bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg  shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
+        <div ref={box14} className="relative overflow-hidden flex flex-col gap-6 p-6 bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg  shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
           <div className="flex gap-3 items-center">
             <div className="p-2  text-primary rounded-lg bg-[#eaf1fc] dark:bg-[#152B4F]  ">
               <svg
@@ -333,8 +354,9 @@ const Skills = () => {
               Debugging
             </p>
           </div>
+          <CursorAnimation boxRef={box14}/>
         </div>
-        <div className="flex flex-col gap-6 p-6 bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg  shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
+        <div ref={box15} className="relative overflow-hidden flex flex-col gap-6 p-6 bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg  shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
           <div className="flex gap-3 items-center">
             <div className="p-1 text-primary rounded-lg bg-[#eaf1fc] dark:bg-[#152B4F]  ">
               <svg
@@ -478,8 +500,8 @@ const Skills = () => {
             <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31]  px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px]">
               Version Control Workflow (Branches,commits,..)
             </p>
-            
           </div>
+          <CursorAnimation boxRef={box15}/>
         </div>
       </div>
     </div>

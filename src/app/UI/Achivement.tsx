@@ -4,6 +4,7 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 const Achivement = () => {
+  
   const achievements = [
     {
       year: "2025",
@@ -385,7 +386,7 @@ const Achivement = () => {
           }}
         >
           {achievements.map((item, index) => (
-            <SwiperSlide
+            <SwiperSlide 
               key={index}
               className="max-w-75 sm:max-w-85 shrink-0 p-6 m-2 bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg  shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900 "
             >

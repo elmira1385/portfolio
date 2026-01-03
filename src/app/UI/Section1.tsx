@@ -88,7 +88,7 @@ const Section1 = () => {
             duration: 0.4,
             delay: 0.4,
           }}
-          className="text-[15px] sm:text-base font-normal text-gray opacity-90 px-6 flex-col sm:flex sm:flex-row gap-20 sm:gap-4  sm:justify-start items-center "
+          className="text-[15px] sm:text-base font-normal text-gray opacity-90 px-6 flex-col sm:flex sm:flex-row gap-20 sm:gap-16 sm:px-1   sm:justify-start items-center "
         >
           <div className="flex gap-4 justify-center ">
             <button className="bg-primary py-2.5 px-5 hover:scale-103 shadow-lg/45 shadow-blue-700 hover:shadow-lg/65 text-white dark:text-black font-medium rounded-xl">

@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <div  className="bg-[#F7FAFC]/98 z-50 dark:bg-[#020817]/97 sticky top-0 left-0 flex justify-between px-6 sm:gap-120 sm:justify-center py-5 items-center">
       <div>
-        <p className="text-xl text-primary font-bold">ESH.</p>
+        <a href="#home" className="text-xl text-primary font-bold">ESH.</a>
       </div>
       <div className="flex sm:gap-10 gap-2 items-center">
         <div className="flex sm:gap-8 hidden sm:inline-flex ">
