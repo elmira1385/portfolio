@@ -28,7 +28,7 @@ const Skills = () => {
           applications.
         </p>
       </div>
-      <div className="flex flex-col sm:flex-row sm:flex-wrap gap-8 sm:gap-6 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2  gap-8 sm:gap-6 ">
         <div ref={box7} className="relative overflow-hidden flex flex-col  gap-6 p-6 bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg  shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
           <div className="flex gap-3 items-center">
             <div className="p-2  text-primary rounded-lg bg-[#eaf1fc] dark:bg-[#152B4F]  ">
@@ -64,6 +64,90 @@ const Skills = () => {
           </div>
          <CursorAnimation boxRef={box7}/>
         </div>
+        <div ref={box10} className="relative overflow-hidden flex flex-col gap-6 p-6 bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg  shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
+          <div className="flex gap-3 items-center">
+            <div className="p-2  text-primary rounded-lg bg-[#eaf1fc] dark:bg-[#152B4F]  ">
+              <svg
+                fill="#2662d9"
+                width="24px"
+                height="24px"
+                viewBox="-2 -2.5 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMinYMin"
+              >
+                <path d="M10 13.554l3.517 1.85-.672-3.917 2.846-2.774-3.932-.571L10 4.579 8.241 8.142l-3.932.571 2.846 2.774-.672 3.916L10 13.554zm0 2.26L3.827 19.06l1.179-6.875L.01 7.317l6.902-1.003L10 .06l3.087 6.254 6.902 1.003-4.995 4.868 1.18 6.875L10 15.814z" />
+              </svg>
+            </div>
+            <h3 className="text-[16px] sm:text-lg font-semibold text-gray dark:text-white">
+              Interactivity & Visuals
+            </h3>
+          </div>
+          <div className="flex gap-2 flex-wrap">
+            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31] px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px]">
+              Framer Motion
+            </p>
+            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31]  px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px] ">
+              Swiper
+            </p>
+            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31]  px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px]">
+              ApexCharts
+            </p>
+          </div>
+          <CursorAnimation boxRef={box10}/>
+        </div> 
+         <div ref={box12} className="relative overflow-hidden flex flex-col gap-6 p-6 bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg  shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
+          <div className="flex gap-3 items-center">
+            <div className="p-2  text-primary rounded-lg bg-[#eaf1fc] dark:bg-[#152B4F]  ">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <rect width="16" height="16" x="4" y="4" rx="2"></rect>
+                <rect width="6" height="6" x="9" y="9" rx="1"></rect>
+                <path d="M15 2v2"></path>
+                <path d="M15 20v2"></path>
+                <path d="M2 15h2"></path>
+                <path d="M2 9h2"></path>
+                <path d="M20 15h2"></path>
+                <path d="M20 9h2"></path>
+                <path d="M9 2v2"></path>
+                <path d="M9 20v2"></path>
+              </svg>
+            </div>
+            <h3 className="text-[16px] sm:text-lg font-semibold text-gray dark:text-white">
+              Tools & Platforms
+            </h3>
+          </div>
+          <div className="flex gap-2 flex-wrap">
+            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31] px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px]">
+              Git & GitHub
+            </p>
+            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31]  px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px] ">
+              Netlify
+            </p>
+            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31]  px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px]">
+              ESlint/Prettier
+            </p>
+            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31]  px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px]">
+              Chrome DevTools
+            </p>
+            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31]  px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px]">
+              VS Code
+            </p>
+            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31]  px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px]">
+              Figma
+            </p>
+          </div>
+          <CursorAnimation boxRef={box12}/>
+        </div>
+        
         <div ref={box8} className="relative overflow-hidden  flex flex-col gap-6 p-6 bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg  shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
           <div className="flex gap-3 items-center">
             <div className="p-2  text-primary rounded-lg bg-[#eaf1fc] dark:bg-[#152B4F]  ">
@@ -112,172 +196,6 @@ const Skills = () => {
           </div>
           <CursorAnimation boxRef={box8}/>
         </div>
-        <div ref={box9} className="relative overflow-hidden flex flex-col gap-6 p-6 bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg  shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
-          <div className="flex gap-3 items-center">
-            <div className="p-2  text-primary rounded-lg bg-[#eaf1fc] dark:bg-[#152B4F]  ">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle>
-                <circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle>
-                <circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle>
-                <circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle>
-                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"></path>
-              </svg>
-            </div>
-            <h3 className="text-[16px] sm:text-lg font-semibold text-gray dark:text-white">
-              Styling & UI
-            </h3>
-          </div>
-          <div className="flex gap-2 flex-wrap ">
-            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31] px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px]">
-              TailwindCSS
-            </p>
-            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31]  px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px] ">
-              Responsive Design & Mobile-first
-            </p>
-            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31]  px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px]">
-              RTL
-            </p>
-            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31]  px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px]">
-              Component-Based Architecture
-            </p>
-            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31]  px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px]">
-              UI/UX Principles
-            </p>
-            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31]  px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px]">
-              UI/UX Principles
-            </p>
-            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31]  px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px]">
-              Accessibility Basics
-            </p>
-          </div>
-          <CursorAnimation boxRef={box9}/>
-        </div>
-        <div ref={box10} className="relative overflow-hidden flex flex-col gap-6 p-6 bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg  shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
-          <div className="flex gap-3 items-center">
-            <div className="p-2  text-primary rounded-lg bg-[#eaf1fc] dark:bg-[#152B4F]  ">
-              <svg
-                fill="#2662d9"
-                width="24px"
-                height="24px"
-                viewBox="-2 -2.5 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio="xMinYMin"
-              >
-                <path d="M10 13.554l3.517 1.85-.672-3.917 2.846-2.774-3.932-.571L10 4.579 8.241 8.142l-3.932.571 2.846 2.774-.672 3.916L10 13.554zm0 2.26L3.827 19.06l1.179-6.875L.01 7.317l6.902-1.003L10 .06l3.087 6.254 6.902 1.003-4.995 4.868 1.18 6.875L10 15.814z" />
-              </svg>
-            </div>
-            <h3 className="text-[16px] sm:text-lg font-semibold text-gray dark:text-white">
-              Interactivity & Visuals
-            </h3>
-          </div>
-          <div className="flex gap-2 flex-wrap">
-            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31] px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px]">
-              Framer Motion
-            </p>
-            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31]  px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px] ">
-              Swiper
-            </p>
-            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31]  px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px]">
-              ApexCharts
-            </p>
-          </div>
-          <CursorAnimation boxRef={box10}/>
-        </div>
-        <div ref={box11} className="relative overflow-hidden flex flex-col gap-6 p-6 bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg  shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
-          <div className="flex gap-3 items-center">
-            <div className="p-2  text-primary rounded-lg bg-[#eaf1fc] dark:bg-[#152B4F]  ">
-              <svg
-                width="23px"
-                height="23px"
-                viewBox="0 0 15 15"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M13.5 7.5L7.74264 13.2574C6.94699 14.053 5.86786 14.5 4.74264 14.5C2.3995 14.5 0.5 12.6005 0.5 10.2574C0.5 9.13214 0.946991 8.05301 1.74264 7.25736L7.67157 1.32843C8.20201 0.797993 8.92143 0.5 9.67157 0.5C11.2337 0.5 12.5 1.76633 12.5 3.32843C12.5 4.07857 12.202 4.79799 11.6716 5.32843L5.91421 11.0858C5.649 11.351 5.28929 11.5 4.91421 11.5C4.13316 11.5 3.5 10.8668 3.5 10.0858C3.5 9.71071 3.649 9.351 3.91421 9.08579L9.5 3.5"
-                  stroke="#2662d9"
-                />
-              </svg>
-            </div>
-            <h3 className="text-[16px] sm:text-lg font-semibold text-gray dark:text-white">
-              Dta & API Management
-            </h3>
-          </div>
-          <div className="flex gap-2 flex-wrap">
-            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31] px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px]">
-              Axios
-            </p>
-            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31]  px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px] ">
-              Data Fetching & Caching Strategies
-            </p>
-            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31]  px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px]">
-              State Management(Zustand,React Query)
-            </p>
-          </div>
-          <CursorAnimation boxRef={box11}/>
-        </div>
-        <div ref={box12} className="relative overflow-hidden flex flex-col gap-6 p-6 bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg  shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
-          <div className="flex gap-3 items-center">
-            <div className="p-2  text-primary rounded-lg bg-[#eaf1fc] dark:bg-[#152B4F]  ">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <rect width="16" height="16" x="4" y="4" rx="2"></rect>
-                <rect width="6" height="6" x="9" y="9" rx="1"></rect>
-                <path d="M15 2v2"></path>
-                <path d="M15 20v2"></path>
-                <path d="M2 15h2"></path>
-                <path d="M2 9h2"></path>
-                <path d="M20 15h2"></path>
-                <path d="M20 9h2"></path>
-                <path d="M9 2v2"></path>
-                <path d="M9 20v2"></path>
-              </svg>
-            </div>
-            <h3 className="text-[16px] sm:text-lg font-semibold text-gray dark:text-white">
-              Tools & Platforms
-            </h3>
-          </div>
-          <div className="flex gap-2 flex-wrap">
-            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31] px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px]">
-              Git & GitHub
-            </p>
-            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31]  px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px] ">
-              Vercel
-            </p>
-            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31]  px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px]">
-              ESlint/Prettier
-            </p>
-            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31]  px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px]">
-              Chrome DevTools
-            </p>
-            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31]  px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px]">
-              VS Code
-            </p>
-            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31]  px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px]">
-              Figma
-            </p>
-          </div>
-          <CursorAnimation boxRef={box12}/>
-        </div>
         <div ref={box13} className="relative overflow-hidden flex flex-col gap-6 p-6 bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg  shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
           <div className="flex gap-3 items-center">
             <div className="p-2  text-primary rounded-lg bg-[#eaf1fc] dark:bg-[#152B4F]  ">
@@ -314,49 +232,8 @@ const Skills = () => {
           </div>
           <CursorAnimation boxRef={box13}/>
         </div>
-        <div ref={box14} className="relative overflow-hidden flex flex-col gap-6 p-6 bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg  shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
-          <div className="flex gap-3 items-center">
-            <div className="p-2  text-primary rounded-lg bg-[#eaf1fc] dark:bg-[#152B4F]  ">
-              <svg
-                fill="#2662d9"
-                width="24px"
-                height="24px"
-                viewBox="0 0 128 128"
-                id="Layer_1"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g>
-                  <path d="M32.2,9L1,64l31.2,55h63.5L127,64L95.8,9H32.2z M91.1,111H36.9L10.2,64l26.7-47h54.2l26.7,47L91.1,111z" />
-
-                  <path d="M64,35c-16,0-29,13-29,29c0,16,13,29,29,29s29-13,29-29C93,48,80,35,64,35z M64,85c-11.6,0-21-9.4-21-21s9.4-21,21-21   s21,9.4,21,21S75.6,85,64,85z" />
-                </g>
-              </svg>
-            </div>
-            <h3 className="text-[16px] sm:text-lg font-semibold text-gray dark:text-white">
-              Development Practices
-            </h3>
-          </div>
-          <div className="flex gap-2 flex-wrap">
-            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31] px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px]">
-              Performance Optimization
-            </p>
-            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31]  px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px] ">
-              Clean Architecture
-            </p>
-            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31]  px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px]">
-              Reusable Components
-            </p>
-            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31]  px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px]">
-              Project Structuring
-            </p>
-            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31]  px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px]">
-              Debugging
-            </p>
-          </div>
-          <CursorAnimation boxRef={box14}/>
-        </div>
-        <div ref={box15} className="relative overflow-hidden flex flex-col gap-6 p-6 bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg  shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
+        
+       <div ref={box15} className="relative overflow-hidden flex flex-col gap-6 p-6 bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg  shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
           <div className="flex gap-3 items-center">
             <div className="p-1 text-primary rounded-lg bg-[#eaf1fc] dark:bg-[#152B4F]  ">
               <svg
@@ -503,6 +380,132 @@ const Skills = () => {
           </div>
           <CursorAnimation boxRef={box15}/>
         </div>
+        <div ref={box11} className="relative overflow-hidden flex flex-col gap-6 p-6 bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg  shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
+          <div className="flex gap-3 items-center">
+            <div className="p-2  text-primary rounded-lg bg-[#eaf1fc] dark:bg-[#152B4F]  ">
+              <svg
+                width="23px"
+                height="23px"
+                viewBox="0 0 15 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.5 7.5L7.74264 13.2574C6.94699 14.053 5.86786 14.5 4.74264 14.5C2.3995 14.5 0.5 12.6005 0.5 10.2574C0.5 9.13214 0.946991 8.05301 1.74264 7.25736L7.67157 1.32843C8.20201 0.797993 8.92143 0.5 9.67157 0.5C11.2337 0.5 12.5 1.76633 12.5 3.32843C12.5 4.07857 12.202 4.79799 11.6716 5.32843L5.91421 11.0858C5.649 11.351 5.28929 11.5 4.91421 11.5C4.13316 11.5 3.5 10.8668 3.5 10.0858C3.5 9.71071 3.649 9.351 3.91421 9.08579L9.5 3.5"
+                  stroke="#2662d9"
+                />
+              </svg>
+            </div>
+            <h3 className="text-[16px] sm:text-lg font-semibold text-gray dark:text-white">
+              Dta & API Management
+            </h3>
+          </div>
+          <div className="flex gap-2 flex-wrap">
+            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31] px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px]">
+              Axios
+            </p>
+            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31]  px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px] ">
+              Data Fetching & Caching Strategies
+            </p>
+            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31]  px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px]">
+              State Management(Zustand,React Query)
+            </p>
+          </div>
+          <CursorAnimation boxRef={box11}/>
+        </div>
+        <div ref={box14} className="relative overflow-hidden flex flex-col gap-6 p-6 bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg  shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
+          <div className="flex gap-3 items-center">
+            <div className="p-2  text-primary rounded-lg bg-[#eaf1fc] dark:bg-[#152B4F]  ">
+              <svg
+                fill="#2662d9"
+                width="24px"
+                height="24px"
+                viewBox="0 0 128 128"
+                id="Layer_1"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g>
+                  <path d="M32.2,9L1,64l31.2,55h63.5L127,64L95.8,9H32.2z M91.1,111H36.9L10.2,64l26.7-47h54.2l26.7,47L91.1,111z" />
+
+                  <path d="M64,35c-16,0-29,13-29,29c0,16,13,29,29,29s29-13,29-29C93,48,80,35,64,35z M64,85c-11.6,0-21-9.4-21-21s9.4-21,21-21   s21,9.4,21,21S75.6,85,64,85z" />
+                </g>
+              </svg>
+            </div>
+            <h3 className="text-[16px] sm:text-lg font-semibold text-gray dark:text-white">
+              Development Practices
+            </h3>
+          </div>
+          <div className="flex gap-2 flex-wrap">
+            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31] px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px]">
+              Performance Optimization
+            </p>
+            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31]  px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px] ">
+              Clean Architecture
+            </p>
+            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31]  px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px]">
+              Reusable Components
+            </p>
+            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31]  px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px]">
+              Project Structuring
+            </p>
+            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31]  px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px]">
+              Debugging
+            </p>
+          </div>
+          <CursorAnimation boxRef={box14}/>
+        </div>
+        <div ref={box9} className="relative overflow-hidden flex flex-col gap-6 p-6 bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg  shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
+          <div className="flex gap-3 items-center">
+            <div className="p-2  text-primary rounded-lg bg-[#eaf1fc] dark:bg-[#152B4F]  ">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle>
+                <circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle>
+                <circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                <circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle>
+                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"></path>
+              </svg>
+            </div>
+            <h3 className="text-[16px] sm:text-lg font-semibold text-gray dark:text-white">
+              Styling & UI
+            </h3>
+          </div>
+          <div className="flex gap-2 flex-wrap ">
+            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31] px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px]">
+              TailwindCSS
+            </p>
+            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31]  px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px] ">
+              Responsive Design & Mobile-first
+            </p>
+            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31]  px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px]">
+              RTL
+            </p>
+            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31]  px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px]">
+              Component-Based Architecture
+            </p>
+            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31]  px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px]">
+              UI/UX Principles
+            </p>
+            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31]  px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px]">
+              UI/UX Principles
+            </p>
+            <p className="dark:text-white dark:bg-transparent dark:hover:bg-[#0C1A31] dark:hover:border-[#0C1A31]  px-2.5 py-1 text-gray hover:bg-[#eaf1fc] hover:scale-105 bg-[#F7FAFC] border border-[#d8edfc] dark:border-2 dark:border-gray-900 rounded-full text-sm sm:text-[13px]">
+              Accessibility Basics
+            </p>
+          </div>
+          <CursorAnimation boxRef={box9}/>
+        </div>
+        
       </div>
     </div>
   );

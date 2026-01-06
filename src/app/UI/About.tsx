@@ -9,9 +9,9 @@ const About = () => {
   return (
     <div
       id="about"
-      className="flex scroll-mt-20 flex-col py-10 sm:flex-row sm:px-40 sm:pb-40 sm:pt-10 gap-10"
+      className="flex scroll-mt-20 flex-col py-10 sm:flex-row  sm:px-46 sm:pb-40 sm:pt-10 gap-10 sm:gap-0  sm:justify-between"
     >
-      <div className="grid grid-cols-1 p-6 gap-8 ">
+      <div className="grid grid-cols-1 p-6 sm:p-0 gap-8 ">
         <div className="flex flex-col gap-10">
           <div>
             <p className="text-3xl sm:text-4xl font-bold text-gray dark:text-white">
@@ -130,7 +130,7 @@ const About = () => {
           
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center px-4 pb-30 sm:py-18 gap-6">
+      <div className="flex flex-col justify-center items-center px-4 sm:px-0 pb-30 sm:py-18 gap-6">
         <div className=" relative hover:scale-103">
           <Image
             className="rounded-full outline-3 outline-[#E1EAF8] dark:outline-gray-700"
