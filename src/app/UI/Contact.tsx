@@ -22,7 +22,7 @@ const Contact = () => {
           message. I'd love to hear from you!
         </p>
       </div>
-      <div className="flex flex-col sm:flex-row sm:gap-12 gap-8">
+      <div className="flex flex-col sm:flex-row sm:justify-between gap-8">
         <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-3">
             <h3 className="text-lg font-semibold text-gray dark:text-white ">
