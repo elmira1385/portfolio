@@ -1,9 +1,17 @@
 "use client";
-import myPicture from "@/image/myPicture.jpg";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import CursorAnimation from "./CursorAnimation";
+import axios from "@/api/axios";
 const About = () => {
+  const[aboutMe,setAboutMe]=useState("")
+  useEffect(()=>{
+    const getAboutMe=async()=>{
+      const{data}=await axios.get<string>("AllApi/aboutMe")
+      setAboutMe(data)
+    }
+    getAboutMe()
+  },[])
   const box1=useRef(null)
   const box2=useRef(null)
   return (
@@ -42,11 +50,7 @@ const About = () => {
             </div>
             <div>
               <p className="dark:text-gray-400 text-gray-500 text-[15px] sm:text-base ">
-                Frontend developer with a passion for crafting elegant,
-                user-centric web applications using modern technologies like
-                React, Next.js, and Tailwind CSS. I specialize in building
-                scalable interfaces that combine performance, accessibility, and
-                visual clarity.
+                {aboutMe}
               </p>
             </div>
           </div>
@@ -136,7 +140,7 @@ const About = () => {
             className="rounded-full outline-3 outline-[#E1EAF8] dark:outline-gray-700"
             width={180}
             height={180}
-            src={myPicture}
+            src="/image/myPicture.jpg"
             alt="myPicture"
           />
           <div className="absolute -bottom-1 -right-2 bg-primary dark:text-black text-white px-3 py-1 rounded-full text-sm font-medium">

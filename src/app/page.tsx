@@ -12,11 +12,11 @@ export default function Home() {
     <div>
       <Section1 />
       <About />
-      <Project/>
-      <Skills/>
-      <Achivement/>
-      <Contact/>
-      <MoveUp/>
+      <Project />
+      <Skills />
+      <Achivement />
+      <Contact />
+      <MoveUp />
     </div>
   );
 }
