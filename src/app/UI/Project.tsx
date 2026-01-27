@@ -42,12 +42,12 @@ const Project = () => {
           various technologies and problem domains.
         </p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-3 sm:justify-between gap-6">
+      <div className="flex flex-col sm:flex-row sm:flex-wrap sm:gap-4 sm:justify-between gap-6 ">
         {itemShow.map((item) => {
           return (
             <div
               key={item.id}
-              className="flex flex-col  sm:w-92  hover:scale-102 hover:shadow-2xl shadow-gray-300 transition-all rounded-xl  dark:hover:shadow-none dark:border-2 dark:border-gray-900"
+              className="flex flex-col  sm:w-92 justify-between  hover:scale-102 hover:shadow-2xl shadow-gray-300 transition-all rounded-xl  dark:hover:shadow-none dark:border-2 dark:border-gray-900"
             >
               <div className="relative group">
                 <img src={item.img} alt="" />
