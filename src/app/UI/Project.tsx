@@ -1,8 +1,7 @@
 "use client";
 
-import { v4 as uuidv4 } from "uuid";
-import { useEffect, useRef, useState } from "react";
-import CursorAnimation from "./CursorAnimation";
+import { useEffect, useState } from "react";
+
 import axios from "@/api/axios";
 
 type TProjects = {
@@ -13,6 +12,7 @@ type TProjects = {
   description: string;
   features: string[];
   button1: string;
+  href: string;
   button2: string;
 };
 const Project = () => {
@@ -25,9 +25,9 @@ const Project = () => {
     getMySkills();
   }, []);
   const [isShowMore, setIsShowMore] = useState(false);
-  const box3 = useRef(null);
+
   const itemShow = projects.slice(0, 3);
-  const itemHide = projects.slice(3, 5);
+  const itemHide = projects.slice(3, 7);
   return (
     <div
       id="projects"
@@ -42,7 +42,7 @@ const Project = () => {
           various technologies and problem domains.
         </p>
       </div>
-      <div className="flex flex-col sm:flex-row sm:flex-wrap sm:gap-4 sm:justify-between gap-6 ">
+      <div className="flex flex-col sm:flex-row sm:flex-wrap sm:gap-6 sm:justify-between gap-6 ">
         {itemShow.map((item) => {
           return (
             <div
@@ -50,19 +50,20 @@ const Project = () => {
               className="flex flex-col  sm:w-92 justify-between  hover:scale-102 hover:shadow-2xl shadow-gray-300 transition-all rounded-xl  dark:hover:shadow-none dark:border-2 dark:border-gray-900"
             >
               <div className="relative group">
-                <img src={item.img} alt="" />
+                <img
+                  className="object-cover rounded-t-xl"
+                  src={item.img}
+                  alt=""
+                />
                 <div className="hidden group-hover:block">
-                <div className=" w-[351.2px] flex justify-center items-center h-44.5 rounded-xl bg-[#2662d9]/25 absolute top-[50%] left-[50%] -translate-1/2  ">
-                  <div className="bg-white rounded-full p-2 z-20">
-                    <img src={item.svg} alt="" />
+                  <div className=" w-full flex justify-center items-center h-44.5 rounded-t-xl bg-[#2662d9]/25 absolute top-[50%] left-[50%] -translate-1/2  ">
+                    <div className="bg-white rounded-full p-2 z-20">
+                      <img src={item.svg} alt="" />
+                    </div>
                   </div>
                 </div>
-                </div>
               </div>
-              <div
-                ref={box3}
-                className="flex relative overflow-hidden flex-col  p-6 gap-4 self-start dark:bg-[#020817]  bg-white rounded-b-xl"
-              >
+              <div className="flex relative overflow-hidden flex-col  p-6 gap-4 self-start dark:bg-[#020817]  bg-white rounded-b-xl">
                 <h3 className="text-xl font-bold text-gray dark:text-white ">
                   {item.title}
                 </h3>
@@ -80,7 +81,10 @@ const Project = () => {
                   ))}
                 </div>
                 <div className="flex gap-2">
-                  <button className="bg-[#f7faff] border-2 border-[#eaf1fc] hover:bg-[#2662d9] dark:bg-transparent dark:text-white dark:hover:text-black dark:border-gray-900 self-start flex gap-2 items-center px-3 py-2 rounded-xl">
+                  <a
+                    href={item.href}
+                    className="bg-[#f7faff] border-2 border-[#eaf1fc] hover:bg-[#2662d9] dark:bg-transparent dark:text-white dark:hover:text-black dark:border-gray-900 self-start flex gap-2 items-center px-3 py-2 rounded-xl"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -96,40 +100,44 @@ const Project = () => {
                       <path d="M9 18c-4.51 2-5-2-7-2"></path>
                     </svg>
                     <p className="text-sm font-medium ">Github</p>
-                  </button>
+                  </a>
                   <button className="bg-[#f7faff] border-2 border-[#eaf1fc] hover:bg-[#2662d9] dark:bg-transparent dark:text-white dark:hover:text-black dark:border-gray-900 self-start flex gap-2 items-center px-3 py-2 rounded-xl">
-                     <img className="size-5" src="/image/golive.png" alt="go live" />
+                    <img
+                      className="size-5"
+                      src="/image/golive.png"
+                      alt="go live"
+                    />
                     <p className="text-sm font-medium ">Go to Live</p>
                   </button>
                 </div>
-                <CursorAnimation boxRef={box3} />
               </div>
             </div>
           );
         })}
 
         {isShowMore && (
-          <div>
+          <div className="flex flex-col sm:flex-row sm:flex-wrap sm:gap-6 sm:justify-between gap-6 ">
             {itemHide.map((item) => {
               return (
                 <div
                   key={item.id}
-                  className="flex flex-col justify-center items-center sm:w-92  hover:scale-102 hover:shadow-2xl shadow-gray-300 transition-all rounded-xl  dark:hover:shadow-none dark:border-2 dark:border-gray-900"
+                  className="flex flex-col  sm:w-92 justify-between  hover:scale-102 hover:shadow-2xl shadow-gray-300 transition-all rounded-xl  dark:hover:shadow-none dark:border-2 dark:border-gray-900"
                 >
-                  <div className="relative group flex justify-center items-center">
-                    <img src={item.img} alt="" />
+                  <div className="relative group">
+                    <img
+                      className="object-cover rounded-t-xl"
+                      src={item.img}
+                      alt=""
+                    />
                     <div className="hidden group-hover:block">
-                    <div className=" w-[351.2px] flex justify-center items-center h-44.5 rounded-xl bg-[#2662d9]/25 absolute top-[50%] left-[50%] -translate-1/2  ">
-                      <div className="bg-white rounded-full p-2 z-20">
-                        <img src={item.svg} alt="" />
+                      <div className=" w-full flex justify-center items-center h-44.5 rounded-t-xl bg-[#2662d9]/25 absolute top-[50%] left-[50%] -translate-1/2  ">
+                        <div className="bg-white rounded-full p-2 z-20">
+                          <img src={item.svg} alt="" />
+                        </div>
                       </div>
                     </div>
-                    </div>
                   </div>
-                  <div
-                    ref={box3}
-                    className="flex relative overflow-hidden flex-col  p-6 gap-4 self-start dark:bg-[#020817]  bg-white rounded-b-xl"
-                  >
+                  <div className="flex relative overflow-hidden flex-col  p-6 gap-4 self-start dark:bg-[#020817]  bg-white rounded-b-xl">
                     <h3 className="text-xl font-bold text-gray dark:text-white ">
                       {item.title}
                     </h3>
@@ -137,17 +145,20 @@ const Project = () => {
                       {item.description}
                     </p>
                     <div className="flex flex-wrap gap-4">
-                      {item?.features.map((i, index) => (
+                      {item?.features.map((item, index) => (
                         <span
                           key={index}
                           className="text-xs bg-[#eaf1fc] dark:bg-[#152B4F] text-primary rounded-full px-3 py-1"
                         >
-                          {i}
+                          {item}
                         </span>
                       ))}
                     </div>
                     <div className="flex gap-2">
-                      <button className="bg-[#f7faff] border-2 border-[#eaf1fc] hover:bg-[#2662d9] dark:bg-transparent dark:text-white dark:hover:text-black dark:border-gray-900 self-start flex gap-2 items-center px-3 py-2 rounded-xl">
+                      <a
+                        href={item.href}
+                        className="bg-[#f7faff] border-2 border-[#eaf1fc] hover:bg-[#2662d9] dark:bg-transparent dark:text-white dark:hover:text-black dark:border-gray-900 self-start flex gap-2 items-center px-3 py-2 rounded-xl"
+                      >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="16"
@@ -163,13 +174,16 @@ const Project = () => {
                           <path d="M9 18c-4.51 2-5-2-7-2"></path>
                         </svg>
                         <p className="text-sm font-medium ">Github</p>
-                      </button>
+                      </a>
                       <button className="bg-[#f7faff] border-2 border-[#eaf1fc] hover:bg-[#2662d9] dark:bg-transparent dark:text-white dark:hover:text-black dark:border-gray-900 self-start flex gap-2 items-center px-3 py-2 rounded-xl">
-                       <img className="size-5" src="/image/golive.png" alt="go live" />
+                        <img
+                          className="size-5"
+                          src="/image/golive.png"
+                          alt="go live"
+                        />
                         <p className="text-sm font-medium ">Go to Live</p>
                       </button>
                     </div>
-                    <CursorAnimation boxRef={box3} />
                   </div>
                 </div>
               );
