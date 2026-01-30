@@ -51,7 +51,7 @@ export const GET =async()=>{
         },
         {
           id: uuidv4(),
-          img: "image/game1.png",
+          img: "image/game.png",
           svg: "svg/github.svg",
           title: "Bug Hunt Game ",
           description:

@@ -19,7 +19,7 @@ const About = () => {
       id="about"
       className="flex scroll-mt-20 flex-col py-10 sm:flex-row  sm:px-46 sm:pb-40 sm:pt-10 gap-10 sm:gap-0  sm:justify-between"
     >
-      <div className="grid grid-cols-1 p-6 sm:p-0 gap-8 ">
+      <div className="flex flex-col p-6 sm:p-0 gap-10 sm:gap-12">
         <div className="flex flex-col gap-10">
           <div>
             <p className="text-3xl sm:text-4xl font-bold text-gray dark:text-white">
@@ -56,7 +56,7 @@ const About = () => {
           </div>
         </div>
         <div  className="flex flex-col sm:flex-row gap-6 ">
-          <div ref={box1} className="relative overflow-hidden p-6 pt-6 bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg flex flex-col gap-4 shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
+          <div ref={box1} className="relative overflow-hidden sm:justify-center p-7  bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg flex flex-col gap-4 shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
             <div>
               <h3 className="text-lg font-semibold flex items-center gap-2 text-gray dark:text-white">
                 <svg
@@ -78,23 +78,23 @@ const About = () => {
                 Education
               </h3>
             </div>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 ">
               <p className="font-medium text-gray dark:text-white">
-                BSc in Software Engineering
+                BSc in Software Engineering  
               </p>
               <p className="text-[12px] sm:text-sm dark:text-gray-400 text-gray-500">
-                SLIIT (Sri Lanka Institute of Information Technology)
+                Islamic Azad University  
               </p>
               <p className="text-[12px] sm:text-sm dark:text-gray-400 text-gray-500">
-                2022 - Present
+                Currently pursuing a degree focused on software 
               </p>
               <p className="text-[12px] sm:text-sm dark:text-gray-400 text-gray-500">
-                Dean's List (2023)
+                development and modern web technologies.
               </p>
             </div>
             <CursorAnimation boxRef={box1}/>
           </div>
-          <div ref={box2} className=" relative overflow-hidden p-6 pt-6 bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg flex flex-col gap-4 shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
+          <div ref={box2} className=" relative overflow-hidden sm:justify-center p-7  bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg flex flex-col gap-4 shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
             <div>
               <h3 className="text-lg font-semibold flex items-center gap-2 text-gray dark:text-white">
                 <svg
