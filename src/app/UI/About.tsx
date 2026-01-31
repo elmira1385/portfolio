@@ -17,7 +17,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="flex scroll-mt-20 flex-col py-10 sm:flex-row  sm:px-46 sm:pb-40 sm:pt-10 gap-10 sm:gap-0  sm:justify-between"
+      className="flex scroll-mt-20 flex-col py-10 sm:flex-row  sm:px-46  sm:pb-30 sm:pt-10 gap-10 sm:gap-0  sm:justify-between"
     >
       <div className="flex flex-col p-6 sm:p-0 gap-10 sm:gap-12">
         <div className="flex flex-col gap-10">
