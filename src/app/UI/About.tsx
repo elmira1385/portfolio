@@ -4,16 +4,16 @@ import { useEffect, useRef, useState } from "react";
 import CursorAnimation from "./CursorAnimation";
 import axios from "@/api/axios";
 const About = () => {
-  const[aboutMe,setAboutMe]=useState("")
-  useEffect(()=>{
-    const getAboutMe=async()=>{
-      const{data}=await axios.get<string>("AllApi/aboutMe")
-      setAboutMe(data)
-    }
-    getAboutMe()
-  },[])
-  const box1=useRef(null)
-  const box2=useRef(null)
+  const [aboutMe, setAboutMe] = useState("");
+  useEffect(() => {
+    const getAboutMe = async () => {
+      const { data } = await axios.get<string>("AllApi/aboutMe");
+      setAboutMe(data);
+    };
+    getAboutMe();
+  }, []);
+  const box1 = useRef(null);
+  const box2 = useRef(null);
   return (
     <div
       id="about"
@@ -55,8 +55,11 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div  className="flex flex-col sm:flex-row gap-6 ">
-          <div ref={box1} className="relative overflow-hidden sm:justify-center p-7  bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg flex flex-col gap-4 shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
+        <div className="flex flex-col sm:flex-row gap-6 ">
+          <div
+            ref={box1}
+            className="relative overflow-hidden sm:justify-center p-7  bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg flex flex-col gap-4 shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900"
+          >
             <div>
               <h3 className="text-lg font-semibold flex items-center gap-2 text-gray dark:text-white">
                 <svg
@@ -80,21 +83,24 @@ const About = () => {
             </div>
             <div className="flex flex-col gap-2 ">
               <p className="font-medium text-gray dark:text-white">
-                BSc in Software Engineering  
+                BSc in Software Engineering
               </p>
               <p className="text-[12px] sm:text-sm dark:text-gray-400 text-gray-500">
-                Islamic Azad University  
+                Islamic Azad University
               </p>
               <p className="text-[12px] sm:text-sm dark:text-gray-400 text-gray-500">
-                Currently pursuing a degree focused on software 
+                Currently pursuing a degree focused on software
               </p>
               <p className="text-[12px] sm:text-sm dark:text-gray-400 text-gray-500">
                 development and modern web technologies.
               </p>
             </div>
-            <CursorAnimation boxRef={box1}/>
+            <CursorAnimation boxRef={box1} />
           </div>
-          <div ref={box2} className=" relative overflow-hidden sm:justify-center p-7  bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg flex flex-col gap-4 shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
+          <div
+            ref={box2}
+            className=" relative overflow-hidden sm:justify-center p-7  bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg flex flex-col gap-4 shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900"
+          >
             <div>
               <h3 className="text-lg font-semibold flex items-center gap-2 text-gray dark:text-white">
                 <svg
@@ -117,21 +123,22 @@ const About = () => {
             </div>
             <div className="flex flex-col gap-2">
               <p className="font-medium text-gray dark:text-white">
-                BSc in Software Engineering
+                CodeCoterie | (August 2025-present)
               </p>
               <p className="text-[12px] sm:text-sm dark:text-gray-400 text-gray-500">
-                SLIIT (Sri Lanka Institute of Information Technology)
+                Front-end Developer
               </p>
               <p className="text-[12px] sm:text-sm dark:text-gray-400 text-gray-500">
-                2022 - Present
+                Optimized React/Next/Tailwind apps (+35% speed).
+                
               </p>
               <p className="text-[12px] sm:text-sm dark:text-gray-400 text-gray-500">
-                Dean's List (2023)
+                Built reusable UI with Redux/Zustand.
               </p>
+             
             </div>
-            <CursorAnimation boxRef={box2}/>
+            <CursorAnimation boxRef={box2} />
           </div>
-          
         </div>
       </div>
       <div className="flex flex-col justify-center items-center px-4 sm:px-0 pb-30 sm:py-18 gap-6">

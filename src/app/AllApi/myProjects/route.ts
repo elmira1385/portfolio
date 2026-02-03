@@ -89,7 +89,7 @@ export const GET = async () => {
       svg: "svg/github.svg",
       title: "Kanban",
       description:
-        "A simple JavaScript game where players pick a bug character.Bugs appear randomly on the screen during gameplay.Players try to catch as many as possible before time runs out.A live counter tracks the number of bugs caught.",
+        "A desktop-based Kanban board featuring Dark/Light mode for better usability. Users can add new tasks, write task details, and easily assign each task to a specific column such as To Do, In Progress, or Done",
       features: ["Html", "Css", "TypeScript", "Tailwind"],
       href: "https://github.com/elmira1385/Kanban",
     },
@@ -99,7 +99,7 @@ export const GET = async () => {
       svg: "svg/github.svg",
       title: "Go Green",
       description:
-        "A simple JavaScript game where players pick a bug character.Bugs appear randomly on the screen during gameplay.Players try to catch as many as possible before time runs out.A live counter tracks the number of bugs caught.",
+        "A desktop web project with a scroll-triggered slider, click-to-filter content, and multiple pages, featuring animations and interactive elements that provide a dynamic and engaging user experience.",
       features: ["Html", "Css", "TypeScript", "Tailwind"],
       href: "https://github.com/elmira1385/go_green",
     },
@@ -109,7 +109,7 @@ export const GET = async () => {
       svg: "svg/github.svg",
       title: "Rent House",
       description:
-        "A simple JavaScript game where players pick a bug character.Bugs appear randomly on the screen during gameplay.Players try to catch as many as possible before time runs out.A live counter tracks the number of bugs caught.",
+        "A desktop web project with animated sliders showcasing houses from an API, featuring click-to-expand panels for interactive viewing and a smooth, engaging, and user-friendly experience.",
       features: ["Html", "Css", "JavaScript", "Tailwind"],
       href: "https://github.com/elmira1385/rent-house",
     },

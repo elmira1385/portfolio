@@ -58,7 +58,7 @@ export const GET = async () => {
     {
       id: uuidv4(),
       year: "2025",
-      icon: "/svg/achivement7.svg",
+      icon: "/svg/skill9.svg",
       title: "Interactive UI Effects & Animations",
       description:
         "Implemented hover effects, glow interactions, blur animations, and smooth transitions using Framer Motion and TailwindCSS.",

@@ -105,7 +105,7 @@ const Contact = () => {
                   Location
                 </h4>
                 <p className="text-sm dark:text-gray-400 text-gray-500 ">
-                  Colombo, Sri Lanka
+                 Iran ,Karaj
                 </p>
               </div>
             </div>
@@ -137,10 +137,32 @@ const Contact = () => {
                   <path d="M9 18c-4.51 2-5-2-7-2"></path>
                 </svg>
               </a>
+              <a 
+                href="elmirashokriyan64@gmail.com"
+                rel="email"
+                aria-label="email"
+                className=" p-3 rounded-full bg-[#e7eff5] group hover:bg-[#2662d9] dark:bg-[#0B1523] transition-colors"
+              >
+                <svg  className="stroke-gray-600 group-hover:stroke-white dark:stroke-gray-400 dark:group-hover:stroke-black"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                 
+                >
+                  <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+              </a>
               <a
-                href="https://github.com/elmira1385"
-                rel="noopener noreferrer"
-                aria-label="GitHub"
+                href="/"
+                rel="linkedin"
+                aria-label="linkedin"
                 className=" p-3 rounded-full bg-[#e7eff5] group hover:bg-[#2662d9] dark:bg-[#0B1523] transition-colors"
               >
                 <svg
@@ -160,28 +182,7 @@ const Contact = () => {
                   <circle cx="4" cy="4" r="2"></circle>
                 </svg>
               </a>
-              <a 
-                href="https://github.com/elmira1385"
-                rel="noopener noreferrer"
-                aria-label="GitHub"
-                className=" p-3 rounded-full bg-[#e7eff5] group hover:bg-[#2662d9] dark:bg-[#0B1523] transition-colors"
-              >
-                <svg  className="stroke-gray-600 group-hover:stroke-white dark:stroke-gray-400 dark:group-hover:stroke-black"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                 
-                >
-                  <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-                </svg>
-              </a>
+              
             </div>
           </div>
         </div>

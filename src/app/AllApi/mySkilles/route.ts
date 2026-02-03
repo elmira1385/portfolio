@@ -29,7 +29,7 @@ export const GET=async()=>{
         id:uuidv4(),
         title:"Utility Libraries",
         icon:"/svg/skill5.svg",
-        description:["i18next","UUID","clsx"]
+        description:["i18next","UUID","clsx", "React Testing Library"]
     },
     {
         id:uuidv4(),

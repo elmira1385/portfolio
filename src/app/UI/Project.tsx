@@ -42,8 +42,8 @@ const Project = () => {
           various technologies and problem domains.
         </p>
       </div>
-     <div className="flex flex-col gap-6 justify-between ">
-       <div className="grid grid-cols-1 sm:grid-cols-3   sm:gap-6  gap-6 ">
+     <div className="flex flex-col gap-6  justify-between ">
+       <div className="grid grid-cols-1 sm:grid-cols-3  sm:gap-6  gap-6 ">
         {itemShow.map((item) => {
           return (
             <div
