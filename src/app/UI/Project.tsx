@@ -42,17 +42,17 @@ const Project = () => {
           various technologies and problem domains.
         </p>
       </div>
-     <div className="flex flex-col gap-6  justify-between ">
-       <div className="grid grid-cols-1 sm:grid-cols-3  sm:gap-6  gap-6 ">
+     <div className="flex flex-col gap-6 w-full justify-center items-center">
+       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 w-full  gap-6  ">
         {itemShow.map((item) => {
           return (
             <div
               key={item.id}
-              className="flex flex-col  sm:w-92 justify-between  hover:scale-102 hover:shadow-2xl shadow-gray-300 transition-all rounded-xl  dark:hover:shadow-none dark:border-2 dark:border-gray-900"
+              className="flex flex-col max-w-92 justify-between  hover:scale-102 hover:shadow-2xl shadow-gray-300 transition-all rounded-xl  dark:hover:shadow-none dark:border-2 dark:border-gray-900"
             >
               <div className="relative group">
                 <img
-                  className="object-cover rounded-t-xl"
+                  className="object-cover w-full rounded-t-xl"
                   src={item.img}
                   alt=""
                 />
@@ -127,16 +127,16 @@ const Project = () => {
         })}
       </div>
       {isShowMore && (
-        <div className="grid grid-cols-1 sm:grid-cols-3  sm:gap-6  gap-6 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 w-full  gap-6   ">
           {itemHide.map((item) => {
             return (
               <div
                 key={item.id}
-                className="flex flex-col  sm:w-92 justify-between  hover:scale-102 hover:shadow-2xl shadow-gray-300 transition-all rounded-xl  dark:hover:shadow-none dark:border-2 dark:border-gray-900"
+                className="flex flex-col max-w-92 justify-between  hover:scale-102 hover:shadow-2xl shadow-gray-300 transition-all rounded-xl  dark:hover:shadow-none dark:border-2 dark:border-gray-900"
               >
                 <div className="relative group">
                   <img
-                    className="object-cover rounded-t-xl"
+                    className="object-cover w-full rounded-t-xl"
                     src={item.img}
                     alt=""
                   />

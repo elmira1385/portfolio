@@ -105,7 +105,7 @@ const Contact = () => {
                   Location
                 </h4>
                 <p className="text-sm dark:text-gray-400 text-gray-500 ">
-                 Iran ,Karaj
+                Tehran, Iran 
                 </p>
               </div>
             </div>

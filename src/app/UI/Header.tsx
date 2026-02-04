@@ -103,9 +103,9 @@ const Header = () => {
             </div>
           )}
         </button>
-        <button className="bg-primary sm:block hidden py-2 px-2.5 rounded-lg text-sm font-bold text-white  dark:text-black">
+        <a href="/myResume/ElmiraShokriyanfardResume.pdf" download className="bg-primary hover:cursor-pointer sm:block hidden py-2 px-2.5 rounded-lg text-sm font-bold text-white  dark:text-black">
           Resume
-        </button>
+        </a>
         <button
           className="sm:hidden block"
           onClick={() => {
