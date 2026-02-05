@@ -210,7 +210,7 @@ const About = () => {
                 d="M19,10h1a1,1,0,0,1,1,1v9a1,1,0,0,1-1,1H4a1,1,0,0,1-1-1V11a1,1,0,0,1,1-1H5"
               ></path>
             </svg>
-            <a href="/myResume/ElmiraShokriyanfardResume.pdf" download className="text-white font-medium text-sm dark:text-black">
+            <a href="/myResume/ElmiraShokriyanFardResume.pdf" download className="text-white font-medium text-sm dark:text-black">
               Download Resume
             </a>
           </button>
