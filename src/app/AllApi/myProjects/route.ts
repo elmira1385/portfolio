@@ -75,7 +75,7 @@ export const GET = async () => {
       ],
 
       href: "https://github.com/elmira1385/Hamrah_Man",
-       liveProject:"https://elmira-hamrah-e-man.netlify.app/",
+       liveProject:"https://elmira-hamrah-e-man.netlify.app",
     },
     {
       id: uuidv4(),
