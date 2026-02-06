@@ -13,7 +13,6 @@ type TProjects = {
   features: string[];
   button1: string;
   href: string;
-  liveProject:string,
   button2: string;
 };
 const Project = () => {
@@ -103,7 +102,7 @@ const Project = () => {
                     </svg>
                     <p className="text-sm font-medium ">Github</p>
                   </a>
-                  <a href={item.liveProject} className="bg-[#f7faff] border-2 border-[#eaf1fc] hover:bg-[#2662d9] dark:bg-transparent dark:text-white dark:hover:text-black dark:border-gray-900 self-start flex gap-2 items-center px-3 py-2 rounded-xl">
+                  <div className="bg-[#f7faff] border-2 border-[#eaf1fc] hover:bg-[#2662d9] dark:bg-transparent dark:text-white dark:hover:text-black dark:border-gray-900 self-start flex gap-2 items-center px-3 py-2 rounded-xl">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -120,7 +119,7 @@ const Project = () => {
                       <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                     </svg>
                     <p className="text-sm font-medium ">Live Demo</p>
-                  </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -203,7 +202,7 @@ const Project = () => {
                         <path d="M10 14 21 3"></path>
                         <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                       </svg>
-                      <a href={item.liveProject} className="text-sm font-medium ">Live Demo</a>
+                      <p className="text-sm font-medium ">Live Demo</p>
                     </button>
                   </div>
                 </div>
