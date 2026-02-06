@@ -18,6 +18,7 @@ export const GET = async () => {
       ],
 
       href: "https://github.com/elmira1385/Resume_Builder",
+      liveProject:"https://elmira-resume-builder.netlify.app",
     },
     {
       id: uuidv4(),
