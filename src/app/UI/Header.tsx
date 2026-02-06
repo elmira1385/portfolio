@@ -103,7 +103,7 @@ const Header = () => {
             </div>
           )}
         </button>
-        <a href="/myResume/ElmiraShokriyanFardResume.pdf" download className="bg-primary hover:cursor-pointer sm:block hidden py-2 px-2.5 rounded-lg text-sm font-bold text-white  dark:text-black">
+        <a href="/myResume/ElmiraShokriyanResume.pdf" download className="bg-primary hover:cursor-pointer sm:block hidden py-2 px-2.5 rounded-lg text-sm font-bold text-white  dark:text-black">
           Resume
         </a>
         <button
@@ -213,9 +213,9 @@ const Header = () => {
               Contact
             </a>
           </div>
-          <button className="bg-primary block sm:hidden py-2 px-2.5 rounded-lg text-sm font-bold text-white  dark:text-black">
+          <a href="/myResume/ElmiraShokriyanResume.pdf" download className="bg-primary block sm:hidden py-2 px-2.5 rounded-lg text-sm font-bold text-white  dark:text-black">
             Resume
-          </button>
+          </a>
         </div>
       </div>
     </div>
