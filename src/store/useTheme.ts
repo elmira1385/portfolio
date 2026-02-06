@@ -6,7 +6,7 @@ type Theme = {
 }
 
 export const useTheme = create<Theme>()((set) => ({
-  theme: "light",
+  theme: "dark",
   setTheme: (v) => set(() => ({ theme:v })),
 }))
 
