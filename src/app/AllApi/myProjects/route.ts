@@ -37,6 +37,7 @@ export const GET = async () => {
       ],
 
       href: "https://github.com/elmira1385/green-cart",
+       liveProject:"https://elmira-green-card.netlify.app",
     },
     {
       id: uuidv4(),
@@ -55,6 +56,7 @@ export const GET = async () => {
       ],
 
       href: "https://github.com/elmira1385/Car_Rentel",
+       liveProject:"https://elmira-car-rental.netlify.app",
     },
     {
       id: uuidv4(),
@@ -73,6 +75,7 @@ export const GET = async () => {
       ],
 
       href: "https://github.com/elmira1385/Hamrah_Man",
+       liveProject:"https://elmira-hamrah-e-man.netlify.app/",
     },
     {
       id: uuidv4(),
@@ -83,6 +86,7 @@ export const GET = async () => {
         "A simple JavaScript game where players pick a bug character.Bugs appear randomly on the screen during gameplay.Players try to catch as many as possible before time runs out.A live counter tracks the number of bugs caught.",
       features: ["Html", "Css", "JavaScript", "Tailwind"],
       href: "https://github.com/elmira1385/Catch_The_Insect",
+       liveProject:"https://elmira-resume-builder.netlify.app",
     },
     {
       id: uuidv4(),
@@ -93,6 +97,7 @@ export const GET = async () => {
         "A desktop-based Kanban board featuring Dark/Light mode for better usability. Users can add new tasks, write task details, and easily assign each task to a specific column such as To Do, In Progress, or Done",
       features: ["Html", "Css", "TypeScript", "Tailwind"],
       href: "https://github.com/elmira1385/Kanban",
+       liveProject:"https://elmira-resume-builder.netlify.app",
     },
     {
       id: uuidv4(),
@@ -103,6 +108,7 @@ export const GET = async () => {
         "A desktop web project with a scroll-triggered slider, click-to-filter content, and multiple pages, featuring animations and interactive elements that provide a dynamic and engaging user experience.",
       features: ["Html", "Css", "TypeScript", "Tailwind"],
       href: "https://github.com/elmira1385/go_green",
+       liveProject:"https://elmira-resume-builder.netlify.app",
     },
     {
       id: uuidv4(),
@@ -113,6 +119,7 @@ export const GET = async () => {
         "A desktop web project with animated sliders showcasing houses from an API, featuring click-to-expand panels for interactive viewing and a smooth, engaging, and user-friendly experience.",
       features: ["Html", "Css", "JavaScript", "Tailwind"],
       href: "https://github.com/elmira1385/rent-house",
+       liveProject:"https://elmira-resume-builder.netlify.app",
     },
   ]);
 };
