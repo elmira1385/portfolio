@@ -17,17 +17,17 @@ const About = () => {
   return (
     <div
       id="about"
-      className="flex scroll-mt-20 flex-col py-10 sm:flex-row  sm:px-46  sm:pb-30 sm:pt-10 gap-10 sm:gap-0  sm:justify-between"
+      className="flex scroll-mt-20 flex-col py-10 sm:flex-row sm:flex-wrap justify-center  sm:px-46  sm:pb-30 sm:pt-10 gap-10 sm:gap-0 md:justify-center sm:justify-center lg:justify-center xl:justify-between"
     >
-      <div className="flex flex-col p-6 sm:p-0 gap-10 sm:gap-12">
-        <div className="flex flex-col gap-10">
+      <div className="flex flex-col p-6 sm:p-0 gap-10 sm:gap-12 ">
+        <div className="flex flex-col gap-10 justify-center items-start md:justify-center sm:justify-center lg:justify-center xl:justify-between">
           <div>
             <p className="text-3xl sm:text-4xl font-bold text-gray dark:text-white">
               <span className="border-b-4 border-[#2662d9]">Abo</span>ut Me
             </p>
           </div>
-          <div className="flex flex-col gap-2">
-            <div className="flex gap-2 items-center">
+          <div className="flex flex-col gap-2 justify-center ">
+            <div className="flex gap-2 ">
               <svg
                 className="stroke-[#2662d9]"
                 xmlns="http://www.w3.org/2000/svg"
@@ -49,13 +49,13 @@ const About = () => {
               <p className="font-bold text-lg text-gray dark:text-white">Bio</p>
             </div>
             <div>
-              <p className="dark:text-gray-400 text-gray-500 text-[15px] sm:text-base ">
+              <p className="dark:text-gray-400 max-w-200 text-gray-500 text-[15px] sm:text-base ">
                 {aboutMe}
               </p>
             </div>
           </div>
         </div>
-        <div className="flex flex-col sm:flex-row gap-6 ">
+        <div className="flex flex-col flex-wrap sm:flex-row gap-6  justify-center md:justify-center sm:justify-center lg:justify-center xl:justify-start">
           <div
             ref={box1}
             className="relative overflow-hidden sm:justify-center p-7  bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg flex flex-col gap-4 shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900"

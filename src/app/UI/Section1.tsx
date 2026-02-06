@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 const Section1 = () => {
   return (
-    <div id="home" className="grid-cols-1 scroll-mt-20 sm:grid sm:grid-cols-2 sm:px-44 sm:py-34  gap-4 sm:gap-80 sm:text-start  sm:items-center  py-18 text-center ">
-      <div className="flex flex-col gap-7 sm:w-200">
+    <div id="home" className="flex flex-col scroll-mt-20 sm:flex-wrap justify-center sm:flex-row sm:px-44 sm:py-34  gap-4  sm:text-start  sm:items-center  py-18 text-center md:justify-center sm:justify-center lg:justify-center xl:justify-between">
+      <div className="flex flex-col gap-7 ">
         <motion.p
           initial={{
             opacity: 0,

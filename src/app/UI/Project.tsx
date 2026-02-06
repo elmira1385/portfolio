@@ -37,13 +37,13 @@ const Project = () => {
         <p className="text-3xl sm:text-4xl font-bold text-gray dark:text-white">
           <span className="border-b-4 border-[#2662d9]">Pro</span>jects
         </p>
-        <p className="dark:text-gray-400 text-gray-500 text-[15px] sm:text-base sm:w-190">
+        <p className="dark:text-gray-400  text-gray-500 text-[15px] sm:text-base ">
           Here are some of the projects I've worked on, showcasing my skills in
           various technologies and problem domains.
         </p>
       </div>
      <div className="flex flex-col gap-6 w-full justify-center items-center">
-       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 w-full  gap-6  ">
+       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 w-full  gap-6  ">
         {itemShow.map((item) => {
           return (
             <div
@@ -127,7 +127,7 @@ const Project = () => {
         })}
       </div>
       {isShowMore && (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 w-full  gap-6   ">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 w-full  gap-6   ">
           {itemHide.map((item) => {
             return (
               <div

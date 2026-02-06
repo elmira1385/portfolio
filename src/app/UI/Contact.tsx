@@ -12,17 +12,17 @@ const Contact = () => {
     }
   })
   return (
-    <div id="contact" className="flex flex-col  gap-10 sm:px-46 px-6  py-30">
+    <div id="contact" className="flex flex-col  gap-10 sm:px-46  px-6  py-30">
       <div className="flex flex-col gap-6 ">
         <p className="text-3xl sm:text-4xl font-bold text-gray dark:text-white">
           <span className="border-b-4 border-[#2662d9]">Get I</span>n Touch
         </p>
-        <p className="dark:text-gray-400 text-gray-500 text-[15px] sm:text-base sm:w-190">
+        <p className="dark:text-gray-400 text-gray-500 text-[15px] sm:text-base ">
           Have a question or want to work together? Feel free to drop me a
           message. I'd love to hear from you!
         </p>
       </div>
-      <div className="flex flex-col sm:flex-row sm:justify-between gap-8">
+      <div className="flex flex-col flex-wrap sm:flex-row sm:justify-between gap-8">
         <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-3">
             <h3 className="text-lg font-semibold text-gray dark:text-white ">

@@ -34,7 +34,7 @@ const Achivement = () => {
         <p className="text-3xl sm:text-4xl font-bold text-gray dark:text-white">
           <span className="border-b-4 border-[#2662d9]">Achi</span>evements
         </p>
-        <p className="dark:text-gray-400 text-gray-500 text-[15px] sm:text-base sm:w-190">
+        <p className="dark:text-gray-400 text-gray-500 text-[15px] sm:text-base ">
           These achievements highlight the real projects I’ve built and the
           results I delivered
         </p>

@@ -2,15 +2,15 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="flex w-full flex-col sm:flex-row sm:justify-between sm:items-center py-12  bg-[#020817] dark:bg-[#0B1523] sm:px-40">
-      <div className="flex flex-col justify-center items-center gap-4 sm:items-start ">
+    <div className="flex w-full flex-col flex-wrap sm:flex-row sm:justify-center md:justify-center lg:justify-center xl:justify-between sm:items-center py-12  bg-[#020817] dark:bg-[#0B1523] sm:px-40">
+      <div className="flex flex-col justify-center items-center gap-4 sm:items-center md:items-center lg:items-center xl:items-start">
         <p className="text-xl text-primary font-bold">ESH.</p>
         <p className="text-[15px] sm:text-base font-normal text-gray flex flex-col gap-1.5 dark:text-gray-500 px-2 sm:px-0 sm:text-start text-center sm:w-120 ">
           Building elegant digital solutions with a focus on user experience and
           technical excellence.
         </p>
       </div>
-      <div className="flex flex-col justify-center items-center sm:items-end ">
+      <div className="flex flex-col  justify-center items-center gap-4 sm:items-center md:items-center lg:items-center xl:items-end">
         <div className="flex gap-6 justify-center pb-6 pt-8 fill-white">
           <a href="https://github.com/elmira1385/">
             <svg className="stroke-gray-400"

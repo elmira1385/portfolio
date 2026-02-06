@@ -15,7 +15,7 @@ const Header = () => {
         </a>
       </div>
       <div className="flex sm:gap-10 gap-2 items-center">
-        <div className="flex sm:gap-8 hidden sm:inline-flex ">
+        <div className="flex sm:gap-8 hidden sm:hidden md:hidden lg:inline-flex xl:inline-flex ">
           <a
             href="#home"
             className="text-sm  dark:text-white dark:hover:text-[#2662d9] font-medium text-gray text-primary-hover transition-colors cursor-pointer"
@@ -103,11 +103,11 @@ const Header = () => {
             </div>
           )}
         </button>
-        <a href="/myResume/ElmiraShokriyanResume.pdf" download className="bg-primary hover:cursor-pointer sm:block hidden py-2 px-2.5 rounded-lg text-sm font-bold text-white  dark:text-black">
+        <a href="/myResume/ElmiraShokriyanResume.pdf" download className="bg-primary hidden sm:hidden md:hidden lg:inline-flex xl:inline-flex hover:cursor-pointer   py-2 px-2.5 rounded-lg text-sm font-bold text-white  dark:text-black">
           Resume
         </a>
         <button
-          className="sm:hidden block"
+          className="block sm:block md:block lg:hidden xl:hidden "
           onClick={() => {
             if (isOpenHeader) {
               setIsOpenHeader(false);
@@ -150,7 +150,7 @@ const Header = () => {
         </button>
         <div
           className={clsx(
-            "fixed sm:hidden flex flex-col gap-6 items-start top-16 z-50 dark:bg-[#020817] bg-[#F7FAFC] shadow-lg w-full h-80 rounded-b-2xl p-4 transition-all duration-300",
+            "fixed sm:inline-flex md:inline-flex lg:hidden xl:hidden  flex flex-col gap-6 items-start   top-16 z-50 dark:bg-[#020817] bg-[#F7FAFC] shadow-lg w-full h-80 rounded-b-2xl p-4 transition-all duration-300",
             {
               "-right-full": !isOpenHeader,
               "right-0": isOpenHeader,
@@ -213,7 +213,9 @@ const Header = () => {
               Contact
             </a>
           </div>
-          <a href="/myResume/ElmiraShokriyanResume.pdf" download className="bg-primary block sm:hidden py-2 px-2.5 rounded-lg text-sm font-bold text-white  dark:text-black">
+          <a onClick={() => {
+                setIsOpenHeader(false);
+              }} href="/myResume/ElmiraShokriyanResume.pdf" download className="bg-primary flex items-start  sm:block md:block lg:hidden xl:hidden  py-2 px-2.5 rounded-lg text-sm font-bold text-white  dark:text-black">
             Resume
           </a>
         </div>
