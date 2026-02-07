@@ -108,7 +108,7 @@ export const GET = async () => {
         "A desktop web project with a scroll-triggered slider, click-to-filter content, and multiple pages, featuring animations and interactive elements that provide a dynamic and engaging user experience.",
       features: ["Html", "Css", "TypeScript", "Tailwind"],
       href: "https://github.com/elmira1385/go_green",
-      live:"https://resume-biulder-elmira.netlify.app/"
+      live:"https://go-green-elmira.netlify.app/"
     },
     {
       id: uuidv4(),
@@ -119,7 +119,7 @@ export const GET = async () => {
         "A desktop web project with animated sliders showcasing houses from an API, featuring click-to-expand panels for interactive viewing and a smooth, engaging, and user-friendly experience.",
       features: ["Html", "Css", "JavaScript", "Tailwind"],
       href: "https://github.com/elmira1385/rent-house",
-       live:"https://resume-biulder-elmira.netlify.app/"
+       live:"https://rent-house-elmira.netlify.app/"
     },
   ]);
 };
