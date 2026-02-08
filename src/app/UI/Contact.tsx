@@ -186,8 +186,8 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <form  className="flex flex-col gap-6 bg-white p-6 dark:bg-[#020817] shadow-2xs rounded-lg  shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
-           <div className="flex flex-col sm:flex-row gap-4">
+        <form  className="flex flex-col flex-wrap gap-6 bg-white p-6 dark:bg-[#020817] shadow-2xs rounded-lg  shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900">
+           <div className="flex flex-col flex-wrap sm:flex-row gap-4">
              <div className="flex flex-col gap-2">
               <label className="font-medium text-gray dark:text-white text-sm">Your Name</label>
               <input  {...register("name",{
@@ -201,13 +201,13 @@ const Contact = () => {
               })}  placeholder="eli@gmail.com" className="border bg-[#f7fafc] dark:bg-transparent focus:outline-none focus:border-[#d0ddf6] dark:focus:border-[#2662d9] rounded-xl w-full  sm:w-75  placeholder:text-gray-400 border-gray-200  placeholder:text-sm  dark:border-2 dark:border-gray-900 p-2 focus:outline-[#D8E2F6] focus:dark:outline-[#2662d9] dark:text-gray-400 text-gray-500 text-sm sm:text-base" type="email" />
             </div>
            </div>
-           <div className="flex flex-col gap-2">
+           <div className="flex flex-col flex-wrap gap-2">
               <label className="font-medium text-gray dark:text-white text-sm">Subject</label>
               <input  {...register("Subject",{
                 required:true
               })}  placeholder="How can I help you?" className="border bg-[#f7fafc] dark:bg-transparent rounded-xl w-full  placeholder:text-gray-400 placeholder:text-sm dark:border-2 dark:border-gray-900 border-gray-200  p-2 focus:outline-none focus:border-[#d0ddf6] dark:focus:border-[#2662d9]  dark:text-gray-400 text-gray-500 text-sm sm:text-base" type="text" />
             </div>
-           <div className="flex flex-col gap-2">
+           <div className="flex flex-col flex-wrap gap-2">
               <label className="font-medium text-gray dark:text-white text-sm">Message</label>
                <textarea placeholder="your message here..." className="border bg-[#f7fafc] dark:bg-transparent h-30 rounded-xl w-full  placeholder:text-gray-400 placeholder:text-sm dark:border-2 dark:border-gray-900 border-gray-200  p-2 focus:outline-none focus:border-[#d0ddf6] dark:focus:border-[#2662d9]  dark:text-gray-400 text-gray-500 text-sm sm:text-base" {...register("Message",{
                 required:true
