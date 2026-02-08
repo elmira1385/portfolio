@@ -129,7 +129,7 @@ const About = () => {
                 Front-end Developer
               </p>
               <p className="text-[12px] sm:text-sm dark:text-gray-400 text-gray-500">
-                Optimized React/Next/Tailwind apps (+35% speed).
+                Optimized React/Next/Tailwind apps .
                 
               </p>
               <p className="text-[12px] sm:text-sm dark:text-gray-400 text-gray-500">
