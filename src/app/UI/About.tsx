@@ -129,7 +129,7 @@ const About = () => {
                 Front-end Developer
               </p>
               <p className="text-[12px] sm:text-sm dark:text-gray-400 text-gray-500">
-                Optimized React/Next/Tailwind apps .
+                Optimized React/Next/TypeScript/Tailwind apps .
                 
               </p>
               <p className="text-[12px] sm:text-sm dark:text-gray-400 text-gray-500">
