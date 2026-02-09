@@ -37,7 +37,7 @@ export const GET = async () => {
       ],
 
       href: "https://github.com/elmira1385/green-cart",
-      live:"https://resume-biulder-elmira.netlify.app/"
+      live:"https://soft-sopapillas-96660f.netlify.app/"
     },
     {
       id: uuidv4(),
