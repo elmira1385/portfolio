@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./UI/Header";
-import ThemProvider from "./theme-provider";
+
 import ThemeProvider from "./theme-provider";
 import Footer from "./UI/Footer";
+
 
 const inter = Inter({
   variable: "--font-inter",
@@ -13,6 +14,9 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "ElmiraShokriyanFard",
+  manifest: "/manifest.json",
+  
+  
 };
 
 export default function RootLayout({
