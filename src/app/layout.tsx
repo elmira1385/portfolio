@@ -12,7 +12,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "ElmiraShokriyanFard|FrontendDeveloper",
+  title: "ElmiraShokriyanFard",
 };
 
 export default function RootLayout({
