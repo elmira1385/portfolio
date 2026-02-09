@@ -23,7 +23,7 @@ export const GET=async()=>{
         id:uuidv4(),
         title:"Frontend Frameworks",
         icon:"/svg/skill4.svg",
-        description:["React","Next.js","React Router","React Query","Zustand","Redux","React Hook Form","Pwa"]
+        description:["React","Next.js","React Router","React Query","Zustand","Redux","React Hook Form","PWA"]
     },
     {
         id:uuidv4(),

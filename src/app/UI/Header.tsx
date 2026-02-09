@@ -8,14 +8,14 @@ const Header = () => {
   const { theme, setTheme } = useTheme();
   const [isOpenHeader, setIsOpenHeader] = useState(false);
   return (
-    <div className="bg-[#F7FAFC]/98 z-50 dark:bg-[#020817]/97 sticky top-0 left-0 flex justify-between px-6  sm:justify-between py-5 items-center sm:px-40">
+    <div className="bg-[#F7FAFC]/98 z-50 dark:bg-[#020817]/97 sticky top-0 left-0 flex justify-between px-6  sm:justify-between py-5 items-center xl:px-40">
       <div>
         <a href="#home" className="text-xl text-primary font-bold">
           ESH.
         </a>
       </div>
       <div className="flex sm:gap-10 gap-2 items-center">
-        <div className="flex sm:gap-8 hidden sm:hidden md:hidden lg:inline-flex xl:inline-flex ">
+        <div className="flex xl:gap-8 hidden sm:hidden md:hidden lg:hidden xl:inline-flex ">
           <a
             href="#home"
             className="text-sm  dark:text-white dark:hover:text-[#2662d9] font-medium text-gray text-primary-hover transition-colors cursor-pointer"
@@ -103,11 +103,11 @@ const Header = () => {
             </div>
           )}
         </button>
-        <a href="/myResume/ElmiraShokriyanResume.pdf" download className="bg-primary hidden sm:hidden md:hidden lg:inline-flex xl:inline-flex hover:cursor-pointer   py-2 px-2.5 rounded-lg text-sm font-bold text-white  dark:text-black">
+        <a href="/myResume/ElmiraShokriyanResume.pdf" download className="bg-primary hidden sm:hidden md:hidden lg:hidden xl:inline-flex hover:cursor-pointer   py-2 px-2.5 rounded-lg text-sm font-bold text-white  dark:text-black">
           Resume
         </a>
         <button
-          className="block sm:block md:block lg:hidden xl:hidden "
+          className="block sm:block md:block lg:block xl:hidden "
           onClick={() => {
             if (isOpenHeader) {
               setIsOpenHeader(false);
@@ -150,7 +150,7 @@ const Header = () => {
         </button>
         <div
           className={clsx(
-            "fixed sm:inline-flex md:inline-flex lg:hidden xl:hidden  flex flex-col gap-6 items-start   top-16 z-50 dark:bg-[#020817] bg-[#F7FAFC] shadow-lg w-full h-80 rounded-b-2xl p-4 transition-all duration-300",
+            "fixed sm:inline-flex md:inline-flex lg:inline-flex xl:hidden  flex flex-col gap-6 items-start   top-16 z-50 dark:bg-[#020817] bg-[#F7FAFC] shadow-lg w-full h-80 rounded-b-2xl p-4 transition-all duration-300",
             {
               "-right-full": !isOpenHeader,
               "right-0": isOpenHeader,
@@ -215,7 +215,7 @@ const Header = () => {
           </div>
           <a onClick={() => {
                 setIsOpenHeader(false);
-              }} href="/myResume/ElmiraShokriyanResume.pdf" download className="bg-primary flex items-start  sm:block md:block lg:hidden xl:hidden  py-2 px-2.5 rounded-lg text-sm font-bold text-white  dark:text-black">
+              }} href="/myResume/ElmiraShokriyanResume.pdf" download className="bg-primary flex items-start  sm:block md:block lg:block  xl:hidden  py-2 px-2.5 rounded-lg text-sm font-bold text-white  dark:text-black">
             Resume
           </a>
         </div>

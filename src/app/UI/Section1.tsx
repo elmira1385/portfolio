@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Section1 = () => {
   return (
-    <div id="home" className="flex flex-col scroll-mt-20 sm:flex-wrap justify-center sm:flex-row sm:px-44 sm:py-34  gap-4  sm:text-start  sm:items-center  py-18 text-center md:justify-center sm:justify-center lg:justify-center xl:justify-between">
+    <div id="home" className="flex flex-col scroll-mt-20  justify-center xl:flex-row xl:px-44 xl:py-34  gap-2 xl:text-start   xl:items-center  py-18 text-center md:justify-center sm:justify-center lg:justify-center xl:justify-between">
       <div className="flex flex-col gap-7 ">
         <motion.p
           initial={{
@@ -19,7 +19,7 @@ const Section1 = () => {
             duration: 0.4,
             delay: 0,
           }}
-          className="text-sm sm:text-base font-medium text-primary opacity-90"
+          className="text-sm xl:text-base font-medium text-primary opacity-90"
         >
           Hello! I'm
         </motion.p>
@@ -36,7 +36,7 @@ const Section1 = () => {
             duration: 0.4,
             delay: 0.1,
           }}
-          className=" font-bold text-primary opacity-90 text-gray text-3xl sm:text-5xl dark:text-white"
+          className=" font-bold text-primary opacity-90 text-gray text-3xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-5xl dark:text-white"
         >
           Elmira <span className="text-primary">ShokriyanFard</span>
         </motion.p>
@@ -53,7 +53,7 @@ const Section1 = () => {
             duration: 0.4,
             delay: 0.2,
           }}
-          className="text-xl sm:text-2xl font-extralight text-gray opacity-90 dark:text-gray-400"
+          className="text-xl xl:text-2xl font-extralight text-gray opacity-90 dark:text-gray-400"
         >
           Frontend Developer
         </motion.p>
@@ -70,7 +70,7 @@ const Section1 = () => {
             duration: 0.4,
             delay: 0.3,
           }}
-          className="text-[15px] sm:text-base font-normal text-gray opacity-90 px-6 sm:px-1 flex flex-col gap-1.5 dark:text-gray-400"
+          className="text-[15px] xl:text-base font-normal text-gray opacity-90 px-6 sm:px-1 flex flex-col gap-1.5 dark:text-gray-400"
         >
           Building elegant solutions to complex problems
           <span> with modern technologies.</span>
@@ -88,7 +88,7 @@ const Section1 = () => {
             duration: 0.4,
             delay: 0.4,
           }}
-          className="text-[15px] sm:text-base font-normal text-gray opacity-90 px-6 flex-col sm:flex sm:flex-row gap-20 sm:gap-16 sm:px-1   sm:justify-start items-center "
+          className="text-[15px] flex-wrap sm:text-base font-normal text-gray opacity-90 px-6 flex-col sm:flex sm:flex-row justify-between gap-4 xl:gap-16 sm:px-1 sm:justify-center  md:justify-center lg:justify-center xl:justify-start items-center "
         >
           <div className="flex gap-4 justify-center ">
             <button className="bg-primary py-2.5 px-5 hover:scale-103 shadow-lg/45 shadow-blue-700 hover:shadow-lg/65 text-white dark:text-black font-medium rounded-xl">
