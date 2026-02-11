@@ -42,6 +42,7 @@ const Footer = () => {
             <rect width="20" height="16" x="2" y="4" rx="2"></rect>
             <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
           </svg></a>
+          <a href="https://www.linkedin.com/in/elmira-shokriyanfard-06818b3b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
           <svg className="stroke-gray-400"
             xmlns="http://www.w3.org/2000/svg"
             width="20"
@@ -57,6 +58,7 @@ const Footer = () => {
             <rect width="4" height="12" x="2" y="9"></rect>
             <circle cx="4" cy="4" r="2"></circle>
           </svg>
+          </a>
           
         </div>
         <div>

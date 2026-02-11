@@ -160,7 +160,7 @@ const Contact = () => {
                 </svg>
               </a>
               <a
-                href="/"
+                href="https://www.linkedin.com/in/elmira-shokriyanfard-06818b3b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                 rel="linkedin"
                 aria-label="linkedin"
                 className=" p-3 rounded-full bg-[#e7eff5] group hover:bg-[#2662d9] dark:bg-[#0B1523] transition-colors"

@@ -131,7 +131,7 @@ const Section1 = () => {
               <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
             </svg>
             </a>
-           <a className="hover:scale-125 transition-all "  href="/">
+           <a className="hover:scale-125 transition-all "  href="https://www.linkedin.com/in/elmira-shokriyanfard-06818b3b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
              <svg  className="hover:stroke-[#2662d9] hover:rotate-12 transition-all "
               xmlns="http://www.w3.org/2000/svg"
               width="24"
