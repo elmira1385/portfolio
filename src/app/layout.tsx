@@ -5,6 +5,7 @@ import Header from "./UI/Header";
 
 import ThemeProvider from "./theme-provider";
 import Footer from "./UI/Footer";
+import SWRegister from "./sw-register";
 
 
 const inter = Inter({
@@ -29,6 +30,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} antialiased  `}
       >
+        <SWRegister/>
         <ThemeProvider>
           <Header />
           {children}
