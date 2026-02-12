@@ -3,9 +3,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "@/api/axios";
-import CursorAnimation from "./CursorAnimation";
+
 
 type TAchivement = {
   id:string,
@@ -16,7 +16,7 @@ type TAchivement = {
   category: string
 };
 const Achivement = () => {
-  const box20 = useRef(null);
+
   const [myAchivements, setMyAchivements] = useState<TAchivement[]>([]);
   useEffect(() => {
     const getMySkills = async () => {
@@ -143,7 +143,7 @@ const Achivement = () => {
               <span className="inline-block text-[#2662d9] mt-4 px-3 py-1 text-sm bg-[#eaf1fc] dark:bg-[#152B4F] rounded-full">
                 {item.category}
               </span>
-              <CursorAnimation boxRef={box20} />
+            
             </SwiperSlide>
           ))}
         </Swiper>
