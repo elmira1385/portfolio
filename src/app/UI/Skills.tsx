@@ -1,7 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import CursorAnimation from "./CursorAnimation";
+import { useEffect, useState } from "react";
 import axios from "@/api/axios";
 
 type TSkills = {
@@ -19,7 +18,7 @@ const Skills = () => {
     };
     getMySkills();
   }, []);
-  const box7 = useRef(null);
+  
   return (
     <div
       id="skills"
@@ -38,7 +37,6 @@ const Skills = () => {
         {mySkills.map((item) => (
           <div
             key={item.id}
-            ref={box7}
             className="relative overflow-hidden flex flex-col  gap-6 p-6 bg-white hover:scale-103 dark:bg-[#020817] shadow-2xs rounded-lg  shadow-gray-300 dark:shadow-none dark:border-2 border-gray-900"
           >
             <div className="flex gap-3 items-center">
@@ -59,7 +57,6 @@ const Skills = () => {
                 </p>
               ))}
             </div>
-            <CursorAnimation boxRef={box7} />
           </div>
         ))}
       </div>
